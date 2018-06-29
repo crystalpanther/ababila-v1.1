@@ -1,0 +1,15 @@
+@import 'blocks/banner/banner.css';
+@import 'blocks/button/button.css';
+@import 'blocks/catalog-nav/catalog-nav.css';
+@import 'blocks/counter/counter.css';
+@import 'blocks/footer/footer.css';
+@import 'blocks/header/header.css';
+@import 'blocks/headline/headline.css';
+@import 'blocks/logo/logo.css';
+@import 'blocks/menu/menu.css';
+@import 'blocks/news/news.css';
+@import 'blocks/product/product.css';
+@import 'blocks/rubric/rubric.css';
+@import 'blocks/search/search.css';
+@import 'blocks/slider/slider.css';
+@import 'blocks/wrapper/wrapper.css';
