@@ -1,15 +1,631 @@
-@import 'blocks/banner/banner.css';
-@import 'blocks/button/button.css';
-@import 'blocks/catalog-nav/catalog-nav.css';
-@import 'blocks/counter/counter.css';
+@import "slick.css";
 @import 'blocks/footer/footer.css';
-@import 'blocks/header/header.css';
-@import 'blocks/headline/headline.css';
-@import 'blocks/logo/logo.css';
-@import 'blocks/menu/menu.css';
-@import 'blocks/news/news.css';
-@import 'blocks/product/product.css';
-@import 'blocks/rubric/rubric.css';
-@import 'blocks/search/search.css';
-@import 'blocks/slider/slider.css';
-@import 'blocks/wrapper/wrapper.css';
+@import 'blocks/page/page.css';
+.info-button {
+  display: flex;
+  align-items: center;
+  width: 273px;
+  height: 103px;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  padding: 0 16px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 27px 0;
+}
+.info-button__item-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #f6bc51;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6bc51', endColorstr='#ffa02f', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.info-button__item-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info-button__item-title {
+  margin-left: 25px;
+  color: #333333;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.button {
+  /* Style for "кнопка" */
+  padding: 4px 5px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #01b017;
+  /* Style for "В корзину" */
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+.search {
+  width: 447px;
+  height: 49px;
+  position: relative;
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+.search__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0 18px;
+}
+.search__button {
+  padding: 0;
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  transform: translate(-100%, 0);
+  width: 60px;
+  height: 51px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  border: solid 1px transparent;
+  outline: none;
+  cursor: pointer;
+  background: #f6bc51;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6bc51', endColorstr='#ffa02f', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.search__button:active {
+  outline: none;
+}
+.search__button .la-search {
+  font-size: 18px;
+  transform: rotate(-90deg);
+  color: #fff;
+}
+.head {
+  background-color: white;
+  padding: 28px 15px 17px 15px;
+}
+.head__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  align-items: center;
+}
+.banner {
+  position: relative;
+  width: 850px;
+  height: 383px;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+.banner__button {
+  cursor: pointer;
+  width: 113px;
+  height: 37px;
+  border-radius: 2px;
+  border: none;
+  top: 82%;
+  left: 3.5%;
+  transform: translate(-3.5%, -82%);
+  position: absolute;
+  background-color: #3379e4;
+  /* Style for "ПОДРОБНЕЕ" */
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* Text style for "ПОДРОБНЕЕ" */
+  letter-spacing: 0.6px;
+}
+.catalog-nav {
+  width: 273px;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+}
+.catalog-nav__head {
+  width: 100%;
+  background-color: #ff5e3a;
+  padding: 19px 25px;
+  box-sizing: border-box;
+  /* Style for "каталог то" */
+  color: #fcfcfc;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* Text style for "к, аталог" */
+  letter-spacing: 0.48px;
+}
+.catalog-nav__head .la-bars {
+  font-size: 25px;
+  margin-right: 25px;
+  vertical-align: middle;
+}
+.catalog-nav__item {
+  position: relative;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e7e7e7;
+}
+.catalog-nav__item:last-child {
+  border-bottom: none;
+}
+.catalog-nav__link {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+}
+.catalog-nav__link-icon {
+  height: 22px;
+}
+.catalog-nav__link-title {
+  margin: 0 0 0 25px;
+  color: #5f5f5f;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+}
+.catalog-nav__submenu {
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  left: 100%;
+  display: none;
+  width: 276px;
+  background-color: white;
+  box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 0 2px;
+}
+.catalog-nav__submenu-item {
+  list-style-type: none;
+}
+.catalog-nav__submenu-link {
+  text-decoration: none;
+  display: block;
+  padding: 12px 22px;
+  color: #424242;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  border-bottom: dotted 1px #e7e7e7;
+}
+.catalog-nav__submenu-active {
+  display: block;
+}
+.counter {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.counter__item-counter {
+  position: relative;
+}
+.counter__item-counter .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -10px;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  border-radius: 100%;
+  background: #f6bc51;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6bc51', endColorstr='#ffa02f', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.counter__item-counter .la {
+  color: #333333;
+  font-size: 23px;
+}
+.counter__title {
+  color: #333333;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 24px;
+}
+.favorite-heart {
+  position: relative;
+}
+.favorite-heart input[type=checkbox] {
+  clear: both;
+  display: none;
+}
+.favorite-heart input[type="checkbox"] {
+  display: none;
+}
+.favorite-heart input[type="checkbox"]:checked + label svg {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  fill: red;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  animation: like-a 0.8s 0s forwards;
+}
+.favorite-heart svg {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 22px;
+  stroke: red;
+  fill: white;
+}
+@-webkit-keyframes like-a {
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+  }
+}
+@-moz-keyframes like-a {
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+  }
+}
+@keyframes like-a {
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+  }
+}
+.headline {
+  background-color: #fafafa;
+}
+.headline__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.headline__text {
+  /* Style for "НОВЫЕ ПОСТ" */
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Museo Sans Cyrl";
+  font-size: 14px;
+  line-height: 62px;
+  /* Text style for "" */
+  letter-spacing: 0.7px;
+  font-weight: 300;
+}
+.headline__button {
+  text-decoration: none;
+  padding: 13px 12px 10px;
+  box-sizing: border-box;
+  background-color: black;
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 62px;
+  text-transform: uppercase;
+  /* Text style for "посмотреть" */
+  letter-spacing: 0.6px;
+}
+.bold {
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+.thin {
+  letter-spacing: 0.7px;
+  font-weight: 100;
+}
+.main {
+  margin-top: 16px;
+}
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.main__banner {
+  width: 850px;
+  height: 383px;
+  margin-left: 20px;
+}
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.menu__item {
+  padding: 0 40px 0 0;
+  position: relative;
+  box-sizing: border-box;
+  transition: 200ms linear;
+}
+.menu__item:hover {
+  background-color: #fff;
+}
+.menu__item:hover a {
+  color: #000;
+}
+.menu__item a {
+  text-decoration: none;
+  color: #ededed;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  /* Text style for "О компании" */
+  letter-spacing: 0.39px;
+}
+.menu__item-exp {
+  transition: 300ms linear;
+}
+.menu__addition {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  right: -34px;
+  top: -21px;
+}
+.menu__addition .square {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 42px;
+  height: 22px;
+  /* Style for "New" */
+  text-transform: uppercase;
+  text-align: center;
+  color: #fdfdfd;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 26px;
+  /* Text style for "N, ew" */
+  letter-spacing: 0.33px;
+}
+.menu__addition .square .triangle-down {
+  position: absolute;
+  top: 22px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 6px solid transparent;
+}
+.menu__addition-new .square {
+  background-color: #5995c8;
+}
+.menu__addition-new .square .triangle-down {
+  border-top: 6px solid #5995c8;
+}
+.menu__addition-hot .square {
+  background-color: #cf5353;
+}
+.menu__addition-hot .square .triangle-down {
+  border-top: 6px solid #cf5353;
+}
+.menu__submenu {
+  z-index: 10;
+  top: 40px;
+  position: absolute;
+  min-width: 245px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  left: -40px;
+}
+.menu__submenu li {
+  padding: 7px 15px;
+  border-bottom: dotted 1px #dfdfdf;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.menu__submenu li .la {
+  color: #5995c8;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.menu__submenu li a {
+  display: block;
+  color: #5d5d5d;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+}
+.menu__submenu-active {
+  display: none;
+}
+.navigation {
+  padding: 0;
+  margin: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+}
+.navigation .navigation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.navigation__menu {
+  display: flex;
+  align-items: center;
+}
+.product {
+  width: 213px;
+  margin: 0 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 18px 15px 18px 27px;
+  border: 1px solid #e7e7e7;
+}
+.product__special-char {
+  text-align: center;
+  padding: 7px 8px;
+  box-sizing: border-box;
+  min-width: 65px;
+  border-radius: 2px;
+  /* Style for "Новинка" */
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+}
+.product__special-char-new {
+  background-color: #d50382;
+}
+.product__special-char-sale {
+  background-color: #ff3622;
+}
+.product__special-char-action {
+  background-color: #60aeea;
+}
+.product__image {
+  position: relative;
+  margin-top: 10px;
+  width: 150px;
+  height: 184px;
+}
+.product__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.product__title {
+  text-align: center;
+  color: #737373;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+.product__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__price {
+  /* Style for "50 ГРН" */
+  color: #272727;
+  font-family: Roboto;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.rainbow-line {
+  width: 100%;
+  height: 5px;
+  background: #ff5f3a;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ff5f3a 1%, #eebe54 25%, #eebe54 50%, #45bb4c 75%, #347ae3 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ff5f3a 1%, #eebe54 25%, #eebe54 50%, #45bb4c 75%, #347ae3 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ff5f3a 1%, #eebe54 25%, #eebe54 50%, #45bb4c 75%, #347ae3 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5f3a', endColorstr='#347ae3', GradientType=1);
+  /* IE6-9 */
+}
+.slider {
+  margin: 20px 0;
+}
+.slider__item {
+  width: 850px;
+}
+.slider__title {
+  color: #272727;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.store-info .store-info__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.user-settings {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+.user-settings__lang .select-lang {
+  background: none;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 10px;
+  font-family: Lato;
+}
+.user-settings__lang .select-lang option {
+  color: black;
+  border: none;
+  font-family: Lato;
+}
+.user-settings__personal-room {
+  margin-left: 15px;
+}
+.user-settings__personal-room .la-user {
+  color: white;
+  font-size: 13px;
+}
+.user-settings__personal-enter {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}

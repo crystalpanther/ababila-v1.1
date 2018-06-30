@@ -1,0 +1,80 @@
+.catalog-nav {
+  width: 273px;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  &__head {
+    width: 100%;
+    background-color: #ff5e3a;
+    padding: 19px 25px;
+    box-sizing: border-box;
+    /* Style for "каталог то" */
+    color: #fcfcfc;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "к, аталог" */
+    letter-spacing: 0.48px;
+    .la-bars {
+      font-size: 25px;
+      margin-right: 25px;
+      vertical-align: middle;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e7e7e7;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &__link {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__link-icon {
+    height: 22px;
+  }
+  &__link-title {
+    margin: 0 0 0 25px;
+    color: #5f5f5f;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  &__submenu {
+    position: absolute;
+    z-index: 15;
+    top:0;
+    left: 100%;
+    display: none;
+    width: 276px;
+    background-color: white;
+    box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 0 2px;
+  }
+  &__submenu-item {
+    list-style-type: none;
+  }
+  &__submenu-link {
+    text-decoration: none;
+    display: block;
+    padding: 12px 22px;
+    color: #424242;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    border-bottom: dotted 1px #e7e7e7;
+  }
+  &__submenu-active {
+    display: block;
+
+  }
+}

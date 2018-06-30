@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Ababila</title>
+    <!--STYLES-->
+    <!--SLICK SLIDER-->
     <link rel="stylesheet" href="styles.css">
+    <!--ICONS-->
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="fonts/MuseoSans-100.otf">
     <link rel="stylesheet" href="fonts/MuseoSansCyrl.otf">
     <link rel="stylesheet" href="fonts/MuseoSansCyrl_0.otf">
@@ -16,12 +20,683 @@
     <link rel="stylesheet" href="fonts/Lato-Heavy.ttf">
     <link rel="stylesheet" href="fonts/Lato-Medium.ttf">
     <link rel="stylesheet" href="fonts/Lato-Light.ttf">
-</head>
-<body>
-<div class="page">
-    <div class="header">
 
+</head>
+<body class="page">
+<!--HEADER-->
+<div class="header">
+    <div class="header__headline headline">
+        <div class="wrapper headline__wrapper">
+            <div class="headline__item">
+                <div class="headline__image">
+                    <img src="img/uper.png" alt="uper">
+                </div>
+            </div>
+            <div class="headline__item">
+                <div class="headline__text">
+                    <span class="bold">новые поступления</span>
+                    <span class="thin">уже на сайте</span>
+                </div>
+            </div>
+            <div class="headline__item">
+                <a href="" class="headline__button">посмотреть</a>
+            </div>
+            <div class="headline__item">
+                <div class="headline_image">
+                    <img src="img/18-0.png" alt="18-0">
+                </div>
+            </div>
+            <div class="headline__item">
+                <div class="headline_image">
+                    <img src="img/bbeb81aba6d78e7cc12d2d13f0fe8ee3.png" alt="18-0">
+                </div>
+            </div>
+            <div class="headline__item">
+                <div class="headline__image">
+                    <img src="img/slider-1.png" alt="slider">
+                </div>
+            </div>
+            <div class="headline__item">
+                <div class="headline_image">
+                    <img src="img/lighter.png" alt="lighter">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__navigation navigation">
+        <div class="wrapper navigation__wrapper">
+            <div class="navigation__menu">
+                <nav class="menu">
+                    <div class="menu__item">
+                        <a href="" class="menu__link">О компании</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="" class="menu__link">Адреса магазинов</a>
+                        <div class="menu__addition menu__addition-new">
+                            <div class="square">new
+                                <div class="triangle-down"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <a href="" class="menu__link">Новости</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="" class="menu_link">Вакансии</a>
+                        <div class="menu__addition menu__addition-hot">
+                            <div class="square">hot
+                                <div class="triangle-down"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item menu-item-exp">
+                        <a href="">Помощь <span class="la la-angle-down"></span></a>
+                        <ul class="menu__submenu-active">
+                            <li><a href=""><span class="la la-question-circle"></span>Как оформить заказ</a></li>
+                            <li><a href=""><span class="la la-money"></span>Способы оплаты товара</a></li>
+                            <li><a href=""><span class="la la-cube"></span>Самовывоз и доставка</a></li>
+                            <li><a href=""><span class="la la-reply"></span>Возврат товара</a></li>
+                            <li><a href=""><span class="la la-file-text"></span>Пользовательское соглашение</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="navigation__user-settings user-settings">
+                <div class="user-settings__lang lang">
+                    <select name="lang" class="select-lang">
+                        <option value="RU">RU</option>
+                        <option value="EN">EN</option>
+                    </select>
+                </div>
+                <div class="user-settings__personal-room personal-room">
+                    <span class="la la-user"></span>
+                    <a href="" class="user-settings__personal-enter">вход в личный кабинет</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__head head">
+        <div class="wrapper head__wrapper">
+            <div class="head__logo logo">
+                <img src="img/logo.png" alt="ababila">
+            </div>
+            <div class="head__search search">
+                <input type="text"  placeholder="Поиск товара..." class="search__input">
+                <button class="search__button">
+                    <span class="la-search la"></span>
+                </button>
+            </div>
+            <div class="head__counter counter">
+                <div class="counter__item-counter">
+                    <div class="counter wish-list__counter">
+                        <span>10</span>
+                    </div>
+                    <span class="la la-heart-o"></span>
+                </div>
+                <span class="counter__title">Список желаний</span>
+            </div>
+            <div class="head__counter counter">
+                <div class="counter__item-counter">
+                    <div class="counter item__counter">
+                        <span>0</span>
+                    </div>
+                    <span class="la la-shopping-cart"></span>
+                </div>
+                <span class="counter__title">В корзине пока пусто</span>
+            </div>
+        </div>
+    </div>
+    <div class="header__rainbow-line rainbow-line"></div>
+</div>
+<!--MAIN-->
+<div class="main">
+    <div class="wrapper main__wrapper">
+        <div class="catalog-nav">
+            <div class="catalog-nav__head">
+                <span class="la la-bars"></span>
+                Каталог товаров
+            </div>
+            <div class="catalog-nav__item">
+                <a href="" class="catalog-nav__link">
+                        <span class="catalog-nav__link-icon">
+                        <img src="img/icons/submenu/armchair.png" alt="armchair">
+                    </span>
+                    <h3 class="catalog-nav__link-title">Гостинная</h3>
+                    <ul class="catalog-nav__submenu catalog-nav__submenu-active">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="catalog-nav__item">
+                <a href="" class="catalog-nav__link">
+                        <span class="catalog-nav__link-icon">
+                        <img src="img/icons/submenu/kitchen--1-.png" alt="kitchen--1">
+                    </span>
+                    <h3 class="catalog-nav__link-title">Кухня</h3>
+                    <ul class="catalog-nav__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="catalog-nav__item">
+                <a href="" class="catalog-nav__link">
+                        <span class="catalog-nav__link-icon">
+                        <img src="img/icons/submenu/bathtub.png" alt="bathtub">
+                    </span>
+                    <h3 class="catalog-nav__link-title">Ванная & туалет</h3>
+                    <ul class="catalog-nav__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="catalog-nav__item">
+                <a href="" class="catalog-nav__link">
+                        <span class="catalog-nav__link-icon">
+                        <img src="img/icons/submenu/bedroom.png" alt="bedroom">
+                    </span>
+                    <h3 class="catalog-nav__link-title">Гардероб & спальня</h3>
+                    <ul class="catalog-nav__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenulinkm">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="catalog-nav__item">
+                <a href="" class="catalog-nav__link">
+                        <span class="catalog-nav__link-icon">
+                        <img src="img/icons/submenu/house.png" alt="house">
+                    </span>
+                    <h3 class="catalog-nav__link-title">Улица & гараж-балкон</h3>
+                    <ul class="catalog-nav__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="catalog-nav__item">
+                <a href="" class="catalog-nav__link">
+                        <span class="catalog-nav__icon">
+                        <img src="img/icons/submenu/teddy-bear.png" alt="teddy-bear">
+                    </span>
+                    <h3 class="catalog-nav__link-title">Детская комната</h3>
+                    <ul class="catalog-nav__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+        <div class="main__banner banner">
+            <img src="img/banner.png" alt="banner">
+            <button class="banner__button button">подробнее</button>
+        </div>
     </div>
 </div>
+<!--STORE INFO-->
+<div class="store-info">
+    <div class="wrapper store-info__wrapper">
+        <a href="" class="info-button">
+            <div class="info-button__item-icon">
+                <img src="img/icons/discount.png" alt="discount">
+            </div>
+            <div class="info-button__item-title">
+                распродажа
+            </div>
+        </a>
+        <a href="" class="info-button">
+            <div class="info-button__item-icon">
+                <img src="img/icons/map-location.png" alt="map-location">
+            </div>
+            <div class="info-button__item-title">
+                все магазины
+            </div>
+        </a>
+        <a href="" class="info-button">
+            <div class="info-button__item-icon">
+                <img src="img/icons/question.png" alt="question">
+            </div>
+            <div class="info-button__item-title">
+                как заказать товар?
+            </div>
+        </a>
+        <a href="" class="info-button">
+            <div class="info-button__item-icon">
+                <img src="img/icons/shipped.png" alt="shipped">
+            </div>
+            <div class="info-button__item-title">
+                способы доставки
+            </div>
+        </a>
+    </div>
+</div>
+<!--ТОВАРЫ К ПРАЗДНИКАМ-->
+<div class="slider">
+    <div class="wrapper slider__wrapper">
+        <h3 class="slider__title">
+            Товары к праздникам
+        </h3>
+        <div class="slider__item slider__gifts">
+            <div class="product">
+                <span class="product__special-char product__special-char-new">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/gift.png" alt="gift">
+                </div>
+                <h3 class="product__title">
+                    Бонбоньерки цвета марсала
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="like11"/>
+                        <label for="like11">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-sale">
+                    Распродажа
+                </span>
+                <div class="product__image">
+                    <img src="img/happy birthday.png" alt="happy birthday">
+                </div>
+                <h3 class="product__title">
+                    Аксессуар-подвеска
+                    “С днём рождения”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="likkess"/>
+                        <label for="likkess">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-action">
+                    Акция
+                </span>
+                <div class="product__image">
+                    <img src="img/confetty.png" alt="confetty">
+                </div>
+                <h3 class="product__title">
+                    Конфетти шары
+                    Колпаки (3 вида)
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="like"/>
+                        <label for="like">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/flapper.png" alt="flapper">
+                </div>
+                <h3 class="product__title">
+                    Пневмохлопушка 40см
+                    “Лепестки роз”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="llikes"/>
+                        <label for="llikes">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+
+            <div class="product">
+                <span class="product__special-char product__special-char-new">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/gift.png" alt="gift">
+                </div>
+                <h3 class="product__title">
+                    Бонбоньерки цвета марсала
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="like1"/>
+                        <label for="like1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-sale">
+                    Распродажа
+                </span>
+                <div class="product__image">
+                    <img src="img/happy birthday.png" alt="happy birthday">
+                </div>
+                <h3 class="product__title">
+                    Аксессуар-подвеска
+                    “С днём рождения”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="likess"/>
+                        <label for="likess">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-action">
+                    Акция
+                </span>
+                <div class="product__image">
+                    <img src="img/confetty.png" alt="confetty">
+                </div>
+                <h3 class="product__title">
+                    Конфетти шары
+                    Колпаки (3 вида)
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="jlike"/>
+                        <label for="jlike">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/flapper.png" alt="flapper">
+                </div>
+                <h3 class="product__title">
+                    Пневмохлопушка 40см
+                    “Лепестки роз”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="likes"/>
+                        <label for="likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ПОПУЛЯРНЫЕ ТОВАРЫ-->
+<div class="slider">
+    <div class="wrapper slider__wrapper">
+        <h3 class="slider__title">
+            Популярные товары
+        </h3>
+        <div class="slider__item slider__popular">
+            <div class="product">
+                <span class="product__special-char product__special-char-new">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/gift.png" alt="gift">
+                </div>
+                <h3 class="product__title">
+                    Бонбоньерки цвета марсала
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="like11"/>
+                        <label for="like11">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-sale">
+                    Распродажа
+                </span>
+                <div class="product__image">
+                    <img src="img/happy birthday.png" alt="happy birthday">
+                </div>
+                <h3 class="product__title">
+                    Аксессуар-подвеска
+                    “С днём рождения”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="likkess"/>
+                        <label for="likkess">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-action">
+                    Акция
+                </span>
+                <div class="product__image">
+                    <img src="img/confetty.png" alt="confetty">
+                </div>
+                <h3 class="product__title">
+                    Конфетти шары
+                    Колпаки (3 вида)
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="like"/>
+                        <label for="like">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/flapper.png" alt="flapper">
+                </div>
+                <h3 class="product__title">
+                    Пневмохлопушка 40см
+                    “Лепестки роз”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="llikes"/>
+                        <label for="llikes">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+
+            <div class="product">
+                <span class="product__special-char product__special-char-new">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/gift.png" alt="gift">
+                </div>
+                <h3 class="product__title">
+                    Бонбоньерки цвета марсала
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="like1"/>
+                        <label for="like1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-sale">
+                    Распродажа
+                </span>
+                <div class="product__image">
+                    <img src="img/happy birthday.png" alt="happy birthday">
+                </div>
+                <h3 class="product__title">
+                    Аксессуар-подвеска
+                    “С днём рождения”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="likess"/>
+                        <label for="likess">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char product__special-char-action">
+                    Акция
+                </span>
+                <div class="product__image">
+                    <img src="img/confetty.png" alt="confetty">
+                </div>
+                <h3 class="product__title">
+                    Конфетти шары
+                    Колпаки (3 вида)
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="jlike"/>
+                        <label for="jlike">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+            <div class="product">
+                <span class="product__special-char">
+                    Новинки
+                </span>
+                <div class="product__image">
+                    <img src="img/flapper.png" alt="flapper">
+                </div>
+                <h3 class="product__title">
+                    Пневмохлопушка 40см
+                    “Лепестки роз”
+                </h3>
+                <div class="product__bottom">
+                    <button class="product__button button">В корзину</button>
+                    <div class="favorite-heart">
+                        <input type="checkbox" id="likes"/>
+                        <label for="likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="product__price">50 грн</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/slick.min.js"></script>
+<script src="blocks/slider/slider.js"></script>
+
 </body>
 </html>

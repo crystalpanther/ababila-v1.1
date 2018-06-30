@@ -1,0 +1,116 @@
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  &__item {
+    padding: 0 40px 0 0;
+    position: relative;
+    box-sizing: border-box;
+    transition: 200ms linear;
+    &:hover {
+      background-color: #fff;
+      a {
+        color: #000;
+      }
+    }
+    a {
+
+      text-decoration: none;
+      color: #ededed;
+      font-family: Lato;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 26px;
+      /* Text style for "О компании" */
+      letter-spacing: 0.39px;
+    }
+  }
+  &__item-exp {
+    transition: 300ms linear;
+  }
+  &__addition {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: -34px;
+    top: -21px;
+    .square {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      width: 42px;
+      height: 22px;
+      /* Style for "New" */
+      text-transform: uppercase;
+      text-align: center;
+      color: #fdfdfd;
+      font-family: Roboto;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 26px;
+      /* Text style for "N, ew" */
+      letter-spacing: 0.33px;
+      .triangle-down {
+        position: absolute;
+        top: 22px;
+        left: 5px;
+        width: 0;
+        height: 0;
+        border-left: 3px solid transparent;
+        border-right: 6px solid transparent;
+
+      }
+    }
+  }
+  &__addition-new {
+    .square {
+      background-color: #5995c8;
+      .triangle-down {
+        border-top: 6px solid #5995c8;
+      }
+    }
+  }
+  &__addition-hot {
+    .square {
+      background-color: #cf5353;
+      .triangle-down {
+        border-top: 6px solid #cf5353;
+      }
+    }
+  }
+  &__submenu {
+
+    z-index: 10;
+    top: 40px;
+    position: absolute;
+    min-width: 245px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    left: -40px;
+    li {
+      padding: 7px 15px;
+      border-bottom: dotted 1px #dfdfdf;
+      list-style-type: none;
+      box-sizing: border-box;
+      .la {
+        color: #5995c8;
+        font-size: 12px;
+        margin-right: 10px;
+      }
+      a {
+        display: block;
+        color: #5d5d5d;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: 0.36px;
+      }
+    }
+  }
+  &__submenu-active {
+    display: none;
+  }
+}
