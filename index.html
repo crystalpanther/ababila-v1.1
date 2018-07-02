@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <title>Ababila</title>
     <!--STYLES-->
-    <!--SLICK SLIDER-->
+    <!--OWL SLIDER-->
+
+    <link rel="stylesheet" href="blocks/owl-slider/owl.carousel.min.css">
+    <link rel="stylesheet" href="blocks/owl-slider/owl.theme.default.min.css">
     <link rel="stylesheet" href="styles.css">
     <!--ICONS-->
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/MuseoSans-100.otf">
-    <link rel="stylesheet" href="fonts/MuseoSansCyrl.otf">
-    <link rel="stylesheet" href="fonts/MuseoSansCyrl_0.otf">
-    <link rel="stylesheet" href="fonts/MuseoSansCyrl_1.otf">
-    <link rel="stylesheet" href="fonts/Lato-Black.ttf">
-    <link rel="stylesheet" href="fonts/Lato-Bold.ttf">
-    <link rel="stylesheet" href="fonts/Lato-Hairline.ttf">
-    <link rel="stylesheet" href="fonts/Lato-Heavy.ttf">
-    <link rel="stylesheet" href="fonts/Lato-Medium.ttf">
-    <link rel="stylesheet" href="fonts/Lato-Light.ttf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/MuseoSans-100.otf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/MuseoSansCyrl.otf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/MuseoSansCyrl_0.otf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/MuseoSansCyrl_1.otf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Lato-Black.ttf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Lato-Bold.ttf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Lato-Hairline.ttf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Lato-Heavy.ttf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Lato-Medium.ttf">
+    <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Lato-Light.ttf">
 
 </head>
 <body class="page">
@@ -41,24 +44,34 @@
             <div class="headline__item">
                 <a href="" class="headline__button">посмотреть</a>
             </div>
-            <div class="headline__item">
+            <div class="headline__item  headline__image-item">
                 <div class="headline_image">
                     <img src="img/18-0.png" alt="18-0">
                 </div>
             </div>
-            <div class="headline__item">
+            <div class="headline__item  headline__image-item">
                 <div class="headline_image">
-                    <img src="img/bbeb81aba6d78e7cc12d2d13f0fe8ee3.png" alt="18-0">
+                    <img src="img/kuhnya-burn.png" alt="kuhnya-burn">
                 </div>
             </div>
-            <div class="headline__item">
+            <div class="headline__item  headline__image-item">
                 <div class="headline__image">
                     <img src="img/slider-1.png" alt="slider">
                 </div>
             </div>
-            <div class="headline__item">
-                <div class="headline_image">
+            <div class="headline__item  headline__image-item">
+                <div class="headline__image">
                     <img src="img/lighter.png" alt="lighter">
+                </div>
+            </div>
+            <div class="headline__item  headline__image-item">
+                <div class="headline__image">
+                    <img src="img/bbeb81aba6d78e7cc12d2d13f0fe8ee3.png" alt="18-0">
+                </div>
+            </div>
+            <div class="headline__item  headline__image-item">
+                <div class="headline_image">
+                    <img src="img/bed.png" alt="bed">
                 </div>
             </div>
         </div>
@@ -66,6 +79,9 @@
     <div class="header__navigation navigation">
         <div class="wrapper navigation__wrapper">
             <div class="navigation__menu">
+                <div class="menu-mobile__button">
+                    <div class="menu-mobile__hamburger"></div>
+                </div>
                 <nav class="menu">
                     <div class="menu__item">
                         <a href="" class="menu__link">О компании</a>
@@ -83,7 +99,7 @@
                         <a href="" class="menu__link">Новости</a>
                     </div>
                     <div class="menu__item">
-                        <a href="" class="menu_link">Вакансии</a>
+                        <a href="" class="menu__link">Вакансии</a>
                         <div class="menu__addition menu__addition-hot">
                             <div class="square">hot
                                 <div class="triangle-down"></div>
@@ -91,7 +107,7 @@
                         </div>
                     </div>
                     <div class="menu__item menu-item-exp">
-                        <a href="">Помощь <span class="la la-angle-down"></span></a>
+                        <a class="menu__link" href="">Помощь <span class="la la-angle-down"></span></a>
                         <ul class="menu__submenu-active">
                             <li><a href=""><span class="la la-question-circle"></span>Как оформить заказ</a></li>
                             <li><a href=""><span class="la la-money"></span>Способы оплаты товара</a></li>
@@ -99,6 +115,45 @@
                             <li><a href=""><span class="la la-reply"></span>Возврат товара</a></li>
                             <li><a href=""><span class="la la-file-text"></span>Пользовательское соглашение</a></li>
                         </ul>
+                    </div>
+                </nav>
+                <nav class="menu-mobile">
+                    <div class="menu-mobile__item">
+                        <a href="" class="menu-mobile__link">О компании</a>
+                    </div>
+                    <div class="menu-mobile__item">
+                        <a href="" class="menu-mobile__link">Адреса магазинов</a>
+                        <div class="menu__addition menu__addition-new">
+                            <div class="square">new
+                                <div class="triangle-down"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="menu-mobile__item">
+                        <a href="" class="menu-mobile__link">Новости</a>
+                    </div>
+                    <div class="menu-mobile__item">
+                        <a href="" class="menu-mobile__link">Вакансии</a>
+                        <div class="menu__addition menu__addition-hot">
+                            <div class="square">hot
+                                <div class="triangle-down"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-mobile__item menu-mobile-item-exp">
+                        <a class="menu-mobile__link" href="">Помощь <span class="la la-angle-down"></span></a>
+                        <ul class="menu-mobile__submenu-active">
+                            <li><a href=""><span class="la la-question-circle"></span>Как оформить заказ</a></li>
+                            <li><a href=""><span class="la la-money"></span>Способы оплаты товара</a></li>
+                            <li><a href=""><span class="la la-cube"></span>Самовывоз и доставка</a></li>
+                            <li><a href=""><span class="la la-reply"></span>Возврат товара</a></li>
+                            <li><a href=""><span class="la la-file-text"></span>Пользовательское соглашение</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-settings-mobile__personal-room personal-room">
+                        <span class="la la-user"></span>
+                        <a href="" class="user-settings-mobile__personal-enter">вход в личный кабинет</a>
                     </div>
                 </nav>
             </div>
@@ -152,6 +207,7 @@
 <!--MAIN-->
 <div class="main">
     <div class="wrapper main__wrapper">
+        <!--МЕНЮ КАТАЛОГА-->
         <div class="catalog-nav">
             <div class="catalog-nav__head">
                 <span class="la la-bars"></span>
@@ -248,6 +304,7 @@
                 </a>
             </div>
         </div>
+        <!--ГЛАВНЫЙ БАННЕР-->
         <div class="main__banner banner">
             <img src="img/banner.png" alt="banner">
             <button class="banner__button button">подробнее</button>
@@ -291,412 +348,1956 @@
         </a>
     </div>
 </div>
-<!--ТОВАРЫ К ПРАЗДНИКАМ-->
-<div class="slider">
-    <div class="wrapper slider__wrapper">
-        <h3 class="slider__title">
-            Товары к праздникам
-        </h3>
-        <div class="slider__item slider__gifts">
-            <div class="product">
-                <span class="product__special-char product__special-char-new">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/gift.png" alt="gift">
-                </div>
-                <h3 class="product__title">
-                    Бонбоньерки цвета марсала
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="like11"/>
-                        <label for="like11">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
+<!--КОНТЕНТ-->
+<div class="content">
+    <div class="wrapper content__wrapper">
+        <div class="content__goods goods">
+            <!--ТОВАРЫ К ПРАЗДНИКАМ-->
+            <div class="slider slider__gifts gifts">
+                <div class="slider__wrapper">
+                    <div class="slider__panel">
+                        <h3 class="content__title">
+                            Товары к праздникам
+                        </h3>
+                        <div class="slider__control control">
+                            <ul class="control__item gifts__control"></ul>
+                        </div>
                     </div>
-                    <div class="product__price">50 грн</div>
-                </div>
-            </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-sale">
-                    Распродажа
-                </span>
-                <div class="product__image">
-                    <img src="img/happy birthday.png" alt="happy birthday">
-                </div>
-                <h3 class="product__title">
-                    Аксессуар-подвеска
-                    “С днём рождения”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="likkess"/>
-                        <label for="likkess">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
-            </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-action">
-                    Акция
-                </span>
-                <div class="product__image">
-                    <img src="img/confetty.png" alt="confetty">
-                </div>
-                <h3 class="product__title">
-                    Конфетти шары
-                    Колпаки (3 вида)
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="like"/>
-                        <label for="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
-            </div>
-            <div class="product">
-                <span class="product__special-char">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/flapper.png" alt="flapper">
-                </div>
-                <h3 class="product__title">
-                    Пневмохлопушка 40см
-                    “Лепестки роз”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="llikes"/>
-                        <label for="llikes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
-            </div>
+                    <div class="slider__item slides__gifts owl-carousel">
+                        <div class="product">
+                            <span class="product__special-char product__special-char-new">Новинки</span>
+                            <div class="product__image">
+                                <img src="img/gift.png" alt="gift">
+                            </div>
+                            <h3 class="product__title">
+                                Бонбоньерки цвета марсала
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <div class="favorite-heart">
+                                    <input type="checkbox" id="likeG2"/>
+                                    <label for="likeG2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product">
+            <span class="product__special-char product__special-char-sale">
+                Распродажа
+            </span>
+                            <div class="product__image">
+                                <img src="img/happy birthday.png" alt="happy birthday">
+                            </div>
+                            <h3 class="product__title">
+                                Аксессуар-подвеска
+                                “С днём рождения”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="likkess"/>-->
+                                <!--<label for="likkess">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product">
+            <span class="product__special-char product__special-char-action">
+                Акция
+            </span>
+                            <div class="product__image">
+                                <img src="img/confetty.png" alt="confetty">
+                            </div>
+                            <h3 class="product__title">
+                                Конфетти шары
+                                Колпаки (3 вида)
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="lllike"/>-->
+                                <!--<label for="lllike">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product">
+            <span class="product__special-char">
+                Новинки
+            </span>
+                            <div class="product__image">
+                                <img src="img/flapper.png" alt="flapper">
+                            </div>
+                            <h3 class="product__title">
+                                Пневмохлопушка 40см
+                                “Лепестки роз”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="llikes"/>-->
+                                <!--<label for="llikes">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
 
-            <div class="product">
-                <span class="product__special-char product__special-char-new">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/gift.png" alt="gift">
-                </div>
-                <h3 class="product__title">
-                    Бонбоньерки цвета марсала
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="like1"/>
-                        <label for="like1">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
+                        <div class="product">
+            <span class="product__special-char product__special-char-new">
+                Новинки
+            </span>
+                            <div class="product__image">
+                                <img src="img/gift.png" alt="gift">
+                            </div>
+                            <h3 class="product__title">
+                                Бонбоньерки цвета марсала
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="likeG1"/>-->
+                                <!--<label for="likeG1">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product">
+            <span class="product__special-char product__special-char-sale">
+                Распродажа
+            </span>
+                            <div class="product__image">
+                                <img src="img/happy birthday.png" alt="happy birthday">
+                            </div>
+                            <h3 class="product__title">
+                                Аксессуар-подвеска
+                                “С днём рождения”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="likkess"/>-->
+                                <!--<label for="likkess">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product">
+            <span class="product__special-char product__special-char-action">
+                Акция
+            </span>
+                            <div class="product__image">
+                                <img src="img/confetty.png" alt="confetty">
+                            </div>
+                            <h3 class="product__title">
+                                Конфетти шары
+                                Колпаки (3 вида)
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="lllike"/>-->
+                                <!--<label for="lllike">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product">
+            <span class="product__special-char">
+                Новинки
+            </span>
+                            <div class="product__image">
+                                <img src="img/flapper.png" alt="flapper">
+                            </div>
+                            <h3 class="product__title">
+                                Пневмохлопушка 40см
+                                “Лепестки роз”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="llikes"/>-->
+                                <!--<label for="llikes">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product__price">50 грн</div>
                 </div>
             </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-sale">
-                    Распродажа
-                </span>
-                <div class="product__image">
-                    <img src="img/happy birthday.png" alt="happy birthday">
-                </div>
-                <h3 class="product__title">
-                    Аксессуар-подвеска
-                    “С днём рождения”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="likess"/>
-                        <label for="likess">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
+            <!--ПОПУЛЯРНЫЕ ТОВАРЫ-->
+            <div class="slider__popular slider popular">
+                <div class="slider__wrapper">
+                    <div class="slider__panel">
+                        <h3 class="content__title">
+                            Популярные товары
+                        </h3>
+                        <div class="slider__control">
+                            <ul class="control__item popular__control">
+                            </ul>
+                        </div>
                     </div>
-                    <div class="product__price">50 грн</div>
+                    <div class="slider__item slides__popular owl-carousel">
+                        <div class="product">
+                            <span class="product__special-char product__special-char-new">Новинки</span>
+                            <div class="product__image">
+                                <img src="img/gift.png" alt="gift">
+                            </div>
+                            <h3 class="product__title">
+                                Бонбоньерки цвета марсала
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <div class="favorite-heart">
+                                    <input type="checkbox" id="likeG11"/>
+                                    <label for="likeG11">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                            <div class="product__image">
+                                <img src="img/happy birthday.png" alt="happy birthday">
+                            </div>
+                            <h3 class="product__title">
+                                Аксессуар-подвеска
+                                “С днём рождения”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="likkess"/>-->
+                                <!--<label for="likkess">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                            <div class="product__image">
+                                <img src="img/confetty.png" alt="confetty">
+                            </div>
+                            <h3 class="product__title">
+                                Конфетти шары
+                                Колпаки (3 вида)
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="lllike"/>-->
+                                <!--<label for="lllike">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product"><span class="product__special-char">Новинки</span>
+                            <div class="product__image">
+                                <img src="img/flapper.png" alt="flapper">
+                            </div>
+                            <h3 class="product__title">
+                                Пневмохлопушка 40см
+                                “Лепестки роз”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="llikes"/>-->
+                                <!--<label for="llikes">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <span class="product__special-char product__special-char-new">Новинки</span>
+                            <div class="product__image">
+                                <img src="img/gift.png" alt="gift">
+                            </div>
+                            <h3 class="product__title">
+                                Бонбоньерки цвета марсала
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="likeG1"/>-->
+                                <!--<label for="likeG1">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                            <div class="product__image">
+                                <img src="img/happy birthday.png" alt="happy birthday">
+                            </div>
+                            <h3 class="product__title">
+                                Аксессуар-подвеска
+                                “С днём рождения”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="likkess"/>-->
+                                <!--<label for="likkess">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                            <div class="product__image">
+                                <img src="img/confetty.png" alt="confetty">
+                            </div>
+                            <h3 class="product__title">
+                                Конфетти шары
+                                Колпаки (3 вида)
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="lllike"/>-->
+                                <!--<label for="lllike">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                        <div class="product"> <span class="product__special-char">Новинки</span>
+                            <div class="product__image">
+                                <img src="img/flapper.png" alt="flapper">
+                            </div>
+                            <h3 class="product__title">
+                                Пневмохлопушка 40см
+                                “Лепестки роз”
+                            </h3>
+                            <div class="product__bottom">
+                                <button class="product__button button">В корзину</button>
+                                <!--<div class="favorite-heart">-->
+                                <!--<input type="checkbox" id="llikes"/>-->
+                                <!--<label for="llikes">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                <!--</svg>-->
+                                <!--</label>-->
+                                <!--</div>-->
+                                <div class="product__price">50 грн</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-action">
-                    Акция
-                </span>
-                <div class="product__image">
-                    <img src="img/confetty.png" alt="confetty">
-                </div>
-                <h3 class="product__title">
-                    Конфетти шары
-                    Колпаки (3 вида)
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="jlike"/>
-                        <label for="jlike">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
+            <!--ТОВАР ДНЯ И НОВИНКИ-->
+            <div class="slider slider__new-goods new-goods ">
+                <div class="slider__wrapper">
+                    <div class="slider__panel slider__panel-new-goods">
+                        <div class="slider__control control slider__control-new-goods">
+                            <ul class="control__item new-goods__control">
+                            </ul>
+                        </div>
                     </div>
-                    <div class="product__price">50 грн</div>
+                    <div class="slider__item slides__new-goods owl-carousel">
+                        <!--ТОВАР ДНЯ-->
+                        <div class="content__product-of-the-day product-of-the-day">
+                            <div class="content__title product-of-the-day__title">товар дня</div>
+                            <div class="product-of-the-day__banner banner">
+                                <img src="img/biolage.png" alt="biolage">
+                                <button class="button banner__button">В корзину</button>
+                            </div>
+                        </div>
+                        <!--НОВИНКИ-->
+                        <div class="content__product-of-the-day product-of-the-day">
+                            <div class="content__title product-of-the-day__title">Новинки</div>
+                            <div class="banner product-banner product-of-the-day__banner">
+                                <div class="product-banner__left">
+                                    <span class="product-banner__special-char product-banner__special-char-new">
+                                    Новинка
+                                </span>
+                                    <div class="product-banner__image">
+                                        <img src="img/gift.png" alt="gift">
+                                    </div>
+                                </div>
+                                <div class="product-banner__right">
+                                    <h3 class="product-banner__title">Бонбоньерки цвета марсала
+                                    </h3>
+                                    <div class="product-banner__price">50 грн</div>
+                                    <div class="product-banner__description description">
+                                        <p class="description__item material">
+                                            Материал: мелованный картон 230 г/м2
+                                        </p>
+                                        <p class="description__item treatment">
+                                            Обработка: глиттер
+                                        </p>
+                                        <p class="description__item size">
+                                            Размер: 6х6х6 см
+                                        </p>
+                                    </div>
+                                    <div class="product-banner__bottom">
+                                        <button class="product-banner__button button">В корзину</button>
+                                        <div class="favorite-heart">
+                                            <input type="checkbox" id="likeG4"/>
+                                            <label for="likeG4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--ТОВАР ДНЯ-->
+                        <div class="content__product-of-the-day product-of-the-day">
+                            <div class="content__title product-of-the-day__title">товар дня</div>
+                            <div class="product-of-the-day__banner banner">
+                                <img src="img/biolage.png" alt="biolage">
+                                <button class="button banner__button">В корзину</button>
+                            </div>
+                        </div>
+                        <!--НОВИНКИ-->
+                        <div class="content__product-of-the-day product-of-the-day">
+                            <div class="content__title product-of-the-day__title">Новинки</div>
+                            <div class="banner product-banner product-of-the-day__banner">
+                                <div class="product-banner__left">
+                                    <span class="product-banner__special-char product-banner__special-char-new">
+                                    Новинка
+                                </span>
+                                    <div class="product-banner__image">
+                                        <img src="img/gift.png" alt="gift">
+                                    </div>
+                                </div>
+                                <div class="product-banner__right">
+                                    <h3 class="product-banner__title">Бонбоньерки цвета марсала
+                                    </h3>
+                                    <div class="product-banner__price">50 грн</div>
+                                    <div class="product-banner__description description">
+                                        <p class="description__item material">
+                                            Материал: мелованный картон 230 г/м2
+                                        </p>
+                                        <p class="description__item treatment">
+                                            Обработка: глиттер
+                                        </p>
+                                        <p class="description__item size">
+                                            Размер: 6х6х6 см
+                                        </p>
+                                    </div>
+                                    <div class="product-banner__bottom">
+                                        <button class="product-banner__button button">В корзину</button>
+                                        <div class="favorite-heart">
+                                            <input type="checkbox" id="likeG7"/>
+                                            <label for="likeG7">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--РУБРИКА КАТАЛОГА-->
+            <div class="content__rubric rubric slider">
+                <div class="slider__panel">
+                    <h3 class="content__title rubric__title">рубрика каталога</h3>
+                    <div class="slider__control">
+                        <ul class="control__item rubric__control"></ul>
+                    </div>
+                </div>
+                <div class="rubric__tabs tabs">
+                    <div class="tabs__container">
+                        <div class="tabs__container-include">
+                            <!--ТАБЫ ДЛЯ РУБРИКИ-->
+                            <div class="tabs">
+                                <ul class="tabs__items">
+                                    <li class="tabs__item tabs__item-active" data-tab="#t1"><span class="tabs__border"></span><a class="tabs__link">
+                                        <div class="tabs__image">
+                                            <img src="img/icons/rubric/feeding.png" alt="feeding">
+                                        </div>
+                                        <h3 class="tabs__title">детское питание</h3></a>
+                                    </li>
+                                    <li class="tabs__item" data-tab="#t2"><span class="tabs__border"></span><a class="tabs__link">
+                                        <div class="tabs__image">
+                                            <img src="img/icons/rubric/train.png" alt="train">
+                                        </div>
+                                        <h3 class="tabs__title">Игрушки
+                                            для детей</h3>
+                                    </a></li>
+                                    <li class="tabs__item" data-tab="#t3"><span class="tabs__border"></span><a class="tabs__link">
+                                        <div class="tabs__image">
+                                            <img src="img/icons/rubric/cradle.png" alt="cradle">
+                                        </div>
+                                        <h3 class="tabs__title">Детская мебель</h3>
+                                    </a></li>
+                                    <li class="tabs__item" data-tab="#t4"><span class="tabs__border"></span><a class="tabs__link" >
+                                        <div class="tabs__image">
+                                            <img src="img/icons/rubric/shoe.png" alt="shoe">
+                                        </div>
+                                        <h3 class="tabs__title">обувь для детей</h3></a></li>
+                                    <li class="tabs__item" data-tab="#t5"><span class="tabs__border"></span><a class="tabs__link" >
+                                        <div class="tabs__image">
+                                            <img src="img/icons/rubric/cream.png" alt="cream">
+                                        </div>
+                                        <h3 class="tabs__title">Косметика для детей</h3></a></li>
+                                    <li class="tabs__item" data-tab="#t6"><span class="tabs__border"></span><a class="tabs__link" >
+                                        <div class="tabs__image">
+                                            <img src="img/icons/rubric/clean.png" alt="clean">
+                                        </div>
+                                        <h3 class="tabs__title">средства для купания</h3></a></li>
+                                    <li class="tabs__item" data-tab="#t7"><span class="tabs__border"></span><a class="tabs__link" >
+                                        <div class="tabs__image">
+                                            <img src="img/icons/rubric/napkin.png" alt="napkin">
+                                        </div>
+                                        <h3 class="tabs__title">Детские салфетки</h3></a></li>
+                                </ul>
+                            </div>
+                            <!--КОНТЕНТ РУБРИК-->
+                            <div class="tabs__content tab">
+                                <div id="t1" class="tab__content tab__content-active">
+                                    <div class="slider slider-rubric">
+                                        <div class="slides__t1 owl-carousel">
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                        <!--<input type="checkbox" id="likeG9"/>-->
+                                                        <!--<label for="likeG9">-->
+                                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                                <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                            <!--</svg>-->
+                                                        <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="t2" class="tab__content">
+                                    <div class="slider slider-rubric">
+                                        <div class="slides__t2 owl-carousel">
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="t3" class="tab__content">
+                                    <div class="slider slider-rubric">
+                                        <div class="slides__t3 owl-carousel">
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="t4" class="tab__content">
+                                    <div class="slider slider-rubric">
+                                        <div class="slides__t4 owl-carousel">
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="t5" class="tab__content">
+                                    <div class="slider slider-rubric">
+                                        <div class="slides__t5 owl-carousel">
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="t6" class="tab__content">
+                                    <div class="slider slider-rubric">
+                                        <div class="slides__t6 owl-carousel">
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="t7" class="tab__content">
+                                    <div class="slider slider-rubric">
+                                        <div class="slides__t7 owl-carousel">
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product">
+                                                <span class="product__special-char product__special-char-new">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebi.png" alt="bebi">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi безмолочная "Гречневая" каша, 200 г
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likeG9"/>-->
+                                                    <!--<label for="likeG9">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/nutrition.png" alt="nutrition">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Nutrilon «Пепти», 400 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="likkess"/>-->
+                                                    <!--<label for="likkess">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/hipp.png" alt="hipp">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    HiPP 2
+                                                    “Combiotic", 350 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="lllike"/>-->
+                                                    <!--<label for="lllike">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="product"><span class="product__special-char">Новинки</span>
+                                                <div class="product__image">
+                                                    <img src="img/rubric/bebiPremium.png" alt="bebi Premium">
+                                                </div>
+                                                <h3 class="product__title">
+                                                    Bebi Premium «4 злака
+                                                    с персиком», 200 г.
+                                                </h3>
+                                                <div class="product__bottom">
+                                                    <button class="product__button button">В корзину</button>
+                                                    <!--<div class="favorite-heart">-->
+                                                    <!--<input type="checkbox" id="llikes"/>-->
+                                                    <!--<label for="llikes">-->
+                                                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                                    <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                                    <!--</svg>-->
+                                                    <!--</label>-->
+                                                    <!--</div>-->
+                                                    <div class="product__price">50 грн</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--БАЗА ЗНАНИЙ-->
+        <div class="content__knowledge-base knowledge-base">
+            <div class="content__title knowledge-base__title">
+                база знаний
+            </div>
+            <div class="knowledge-base__tape">
+                <div class="news">
+                    <div class="news__image">
+                        <img src="img/new%20in%20week.png" alt="new">
+                    </div>
+                    <div class="news__title">
+                        Новинки недели: 7-13 мая
+                    </div>
+                    <article class="news__text">
+                        Идейные соображения высшего порядка, а также консультация с широким активом в степени обуславливает создание направлений прогрессивного развития.развития.
+                    </article>
+                    <div class="news__footer">
+                        <div class="news__button">читать далее...</div>
+                        <div class="news__date">07.05.2018</div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news__image">
+                        <img src="img/top%20popular.png" alt="top">
+                    </div>
+                    <div class="news__title">
+                        Новинки недели: 7-13 мая
+                    </div>
+                    <article class="news__text">
+                        Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации систем массового участия.
+                    </article>
+                    <div class="news__footer">
+                        <div class="news__button">читать далее...</div>
+                        <div class="news__date">12.05.2018</div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news__image">
+                        <img src="img/day%20time.png" alt="day">
+                    </div>
+                    <div class="news__title">
+                        Часы работы магазинов в
+                        праздничные дни
+                    </div>
+                    <article class="news__text">
+                        Не следует, однако забывать,
+                        что консультация с широким активом представляет собой интересный эксперимент проверки дальнейших направлений развития.
+                    </article>
+                    <div class="news__footer">
+                        <div class="news__button">читать далее...</div>
+                        <div class="news__date">07.05.2018</div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news__image">
+                        <img src="img/sale.png" alt="sale">
+                    </div>
+                    <div class="news__title">
+                        Скидки на зимние товары
+                    </div>
+                    <article class="news__text">
+                        С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия.
+
+                    </article>
+                    <div class="news__footer">
+                        <div class="news__button">читать далее...</div>
+                        <div class="news__date">07.05.2018</div>
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <span class="product__special-char">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/flapper.png" alt="flapper">
+            <div class="knowledge-base__banner banner-knowledge">
+                <div class="banner-knowledge__image">
+                    <img src="img/kids.png" alt="kids">
                 </div>
-                <h3 class="product__title">
-                    Пневмохлопушка 40см
-                    “Лепестки роз”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="likes"/>
-                        <label for="likes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
+                <a href="" class="banner-knowledge__name">Вся детская одежда</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <div class="footer__item">
+            <div class="logo footer__logo">
+                <a href="" class="logo__link"><img src="img/logo.png" alt="logo"></a>
+                <div class="footer__call-info call-info">
+                    <p class="call-info__title">
+                        Звоните бесплатно:
+                    </p>
+                    <div class="call-info__time">
+                        Круглосуточно (24/7)
                     </div>
-                    <div class="product__price">50 грн</div>
+
+                    <h3 class="call-info__number">
+                        <span class="call-info__icon">
+                        <img src="img/icons/call.png" alt="call">
+                    </span>
+                        0 <span class="call-info__colorful">800</span> 21-22-23
+                    </h3>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!--ПОПУЛЯРНЫЕ ТОВАРЫ-->
-<div class="slider">
-    <div class="wrapper slider__wrapper">
-        <h3 class="slider__title">
-            Популярные товары
-        </h3>
-        <div class="slider__item slider__popular">
-            <div class="product">
-                <span class="product__special-char product__special-char-new">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/gift.png" alt="gift">
-                </div>
-                <h3 class="product__title">
-                    Бонбоньерки цвета марсала
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="like11"/>
-                        <label for="like11">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
+        <div class="footer__item">
+            <div class="footer__title">
+                информация
             </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-sale">
-                    Распродажа
-                </span>
-                <div class="product__image">
-                    <img src="img/happy birthday.png" alt="happy birthday">
-                </div>
-                <h3 class="product__title">
-                    Аксессуар-подвеска
-                    “С днём рождения”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="likkess"/>
-                        <label for="likkess">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
+            <ul class="footer__lists">
+                <li class="footer__list"><a href="" class="footer__link">О компании</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Адреса магазинов</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Новости</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Вакансии</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__title">
+                сервисы
             </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-action">
-                    Акция
-                </span>
-                <div class="product__image">
-                    <img src="img/confetty.png" alt="confetty">
-                </div>
-                <h3 class="product__title">
-                    Конфетти шары
-                    Колпаки (3 вида)
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="like"/>
-                        <label for="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
+            <ul class="footer__lists">
+                <li class="footer__list"><a href="" class="footer__link">Гарантия и сервис</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Оплата</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Доставка</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Возврат товара</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Подарочные карты</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__title">
+                личный кабинет
             </div>
-            <div class="product">
-                <span class="product__special-char">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/flapper.png" alt="flapper">
-                </div>
-                <h3 class="product__title">
-                    Пневмохлопушка 40см
-                    “Лепестки роз”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="llikes"/>
-                        <label for="llikes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
+            <ul class="footer__lists">
+                <li class="footer__list"><a href="" class="footer__link">Аккаунт</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Сравнение</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Желаемое</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Корзина</a></li>
+                <li class="footer__list"><a href="" class="footer__link">Подарочные карты</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__title">
+                Мы в соц.сетях
             </div>
-
-            <div class="product">
-                <span class="product__special-char product__special-char-new">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/gift.png" alt="gift">
-                </div>
-                <h3 class="product__title">
-                    Бонбоньерки цвета марсала
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="like1"/>
-                        <label for="like1">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
-            </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-sale">
-                    Распродажа
-                </span>
-                <div class="product__image">
-                    <img src="img/happy birthday.png" alt="happy birthday">
-                </div>
-                <h3 class="product__title">
-                    Аксессуар-подвеска
-                    “С днём рождения”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="likess"/>
-                        <label for="likess">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
-            </div>
-            <div class="product">
-                <span class="product__special-char product__special-char-action">
-                    Акция
-                </span>
-                <div class="product__image">
-                    <img src="img/confetty.png" alt="confetty">
-                </div>
-                <h3 class="product__title">
-                    Конфетти шары
-                    Колпаки (3 вида)
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="jlike"/>
-                        <label for="jlike">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
-            </div>
-            <div class="product">
-                <span class="product__special-char">
-                    Новинки
-                </span>
-                <div class="product__image">
-                    <img src="img/flapper.png" alt="flapper">
-                </div>
-                <h3 class="product__title">
-                    Пневмохлопушка 40см
-                    “Лепестки роз”
-                </h3>
-                <div class="product__bottom">
-                    <button class="product__button button">В корзину</button>
-                    <div class="favorite-heart">
-                        <input type="checkbox" id="likes"/>
-                        <label for="likes">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="product__price">50 грн</div>
-                </div>
+            <div class="footer__social-media social__media">
+                <a href="" class="social-media__link"><span class="la la-facebook"></span></a>
+                <a href="" class="social-media__link"><span class="la la-instagram"></span></a>
+                <a href="" class="social-media__link"><span class="la la-twitter"></span></a>
+                <a href="" class="social-media__link"><span class="la la-youtube-play"></span></a>
             </div>
         </div>
     </div>
-</div>
-
+    <div class="footer__rights rights">
+        <div class="wrapper rights__wrapper">
+            <div class="rights__item">
+                <p class="rights__rule">2018 © Ababila, Все права защищены</p>
+            </div>
+            <div class="rights__item">
+                <span class="rights__created">Created by</span>
+                <img src="img/avilton-logo-02.png" alt="avilton-logo">
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="js/slick.min.js"></script>
+<script src="blocks/favorite-heart/favorite-heart.js"></script>
+<script src="js/main.js"></script>
 <script src="blocks/slider/slider.js"></script>
+<script src="blocks/owl-slider/owl.carousel.min.js"></script>
+<script src="blocks/tabs/tabs.js"></script>
+<script src="blocks/menu/menu.js"></script>
 
 </body>
 </html>

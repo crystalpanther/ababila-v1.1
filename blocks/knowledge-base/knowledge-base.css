@@ -1,0 +1,42 @@
+.knowledge-base__title {
+  /* Style for "база знани" */
+  text-align: center;
+  width: 272px;
+  height: 52px;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  padding: 14px 0;
+  margin: 0;
+}
+.knowledge-base__tape {
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  position: relative;
+  padding: 10px 21px 7px 21px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.knowledge-base__banner {
+  text-align: center;
+  padding: 50px 54px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  /* Style for "Box копия" */
+  width: 272px;
+  height: 351px;
+  box-shadow: 0 3px 7px rgba(151, 151, 151, 0.35);
+  border: 1px solid #e7e7e7;
+  background-color: #fff0e3;
+}
+.knowledge-base .banner-knowledge__name {
+  color: #161616;
+  padding-bottom: 2px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration-color: black;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}

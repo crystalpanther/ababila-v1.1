@@ -1,3 +1,11 @@
-/**
- * Created by elina on 6/29/2018.
- */
+var animated = false;
+$('.heart').click(function(){
+    if(!animated){
+        $(this).addClass('happy').removeClass('broken');
+        animated = true;
+    }
+    else {
+        $(this).removeClass('happy').addClass('broken');
+        animated = false;
+    }
+}); 

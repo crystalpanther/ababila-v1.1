@@ -1,15 +1,68 @@
 .slider {
-  margin: 20px 0;
+  margin-bottom: 78px;
   &__item {
-    width: 850px;
+    margin: 20px 0 0 0;
   }
-  &__title {
-    color: #272727;
-    font-family: "Museo Sans Cyrl 700";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin-bottom: 27px;
+  &__panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__panel-new-goods {
+    position: relative;
+    z-index: 110;
+  }
+  &__control{
+    position: relative;
+  }
+  &__control-new-goods {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+  .control {
+    &__prev,
+    &__next {
+      outline: none;
+      /* Style for "Box" */
+      width: 28px;
+      height: 28px;
+      padding: 0px;
+      border: 1px solid #e4e4e4;
+      background-color: #ffffff;
+      cursor: pointer;
+      border-radius: 1px;
+      transition: all 300ms linear;
+      span {
+        font-size: 21px;
+        color: #555555;
+      }
+      &:hover, &:focus {
+        outline: none;
+        background-color: #555555;
+        span {
+          color: white;
+        }
+      }
+    }
+    &__prev{
+      margin-right: 5px;
+    }
+    &__item {
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      padding: 0;
+    }
+    &__arrow{
+      position: relative;
+      .la {
+        font-size: 18px;
+        color: #333;
+        padding: 7px 5px;
+      }
+    }
   }
 }
+

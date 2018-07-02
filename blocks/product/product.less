@@ -1,10 +1,11 @@
 .product {
-  width: 213px;
-  margin: 0 5px;
+  position: relative;
+  width: 208px;
+  height: 355px;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 18px 15px 18px 27px;
   border: 1px solid #e7e7e7;
+  padding: 21px 21px 10px 14px;
   &__special-char {
     text-align: center;
     padding: 7px 8px;
@@ -28,8 +29,8 @@
   }
   &__image {
     position: relative;
-    margin-top: 10px;
     width: 150px;
+    text-align: center;
     height: 184px;
     img {
       position: absolute;
@@ -45,10 +46,80 @@
     font-family: Lato;
     font-size: 16px;
     font-weight: 400;
+    height: 55px;
   }
   &__bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    box-sizing: border-box;
+    transform: translateY(-100%);
+    padding: 18px 9px 18px 8px;
+  }
+  &__price {
+    /* Style for "50 ГРН" */
+    color: #272727;
+    font-family: Roboto;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+.product-banner {
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #e7e7e7;
+  &__right {
+    margin-left: 10px;
+  }
+  &__special-char {
+    /* Style for "Новинка" */
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    padding: 3px 8px;
+    box-sizing: border-box;
+    min-width: 65px;
+    font-family: Roboto;
+    border-radius: 2px;
+    color: #fff;
+  }
+  &__special-char-new {
+    background-color: #d50382;
+  }
+  &__special-char-sale {
+    background-color: #ff3622;
+  }
+  &__special-char-action {
+    background-color: #60aeea;
+  }
+  &__image {
+    position: relative;
+    /* Style for "пикча" */
+    width: 131px;
+    height: 149px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  }
+  &__title {
+    margin: 10px 0;
+    color: #737373;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__bottom {
+    display: flex;
     align-items: center;
   }
   &__price {
@@ -58,5 +129,17 @@
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
+  }
+  &__description {
+
+  }
+  .description {
+    &__item {
+      color: #737373;
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+    }
   }
 }

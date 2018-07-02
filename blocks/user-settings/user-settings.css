@@ -3,6 +3,10 @@
   align-items: baseline;
   flex-wrap: nowrap;
 }
+.user-settings__lang {
+  padding: 0;
+  box-sizing: border-box;
+}
 .user-settings__lang .select-lang {
   background: none;
   border: none;
@@ -25,10 +29,36 @@
 }
 .user-settings__personal-enter {
   color: #ffffff;
+  box-sizing: border-box;
   font-family: Lato;
   font-size: 10px;
   font-weight: 300;
-  line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 200ms linear;
+}
+.user-settings-mobile__personal-room {
+  padding: 30px 0 15px 30px;
+}
+.user-settings-mobile__personal-room .la-user {
+  display: inline-block;
+  color: #5d5d5d;
+  font-size: 13px;
+}
+.user-settings-mobile__personal-enter {
+  color: #5d5d5d;
+  box-sizing: border-box;
+  font-size: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Lato;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 200ms linear;
+}
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen and (min-device-width: 320px) and (max-device-width: 960px) {
+  .user-settings__personal-room {
+    display: none;
+  }
 }
