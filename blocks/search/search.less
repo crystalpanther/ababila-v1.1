@@ -2,7 +2,6 @@
   width: 447px;
   height: 49px;
   position: relative;
-
   background-color: #ffffff;
   border-radius: 2px;
   &__input {
@@ -45,3 +44,56 @@
     }
   }
 }
+.search-mobile {
+  width: 150px;
+  height: 20px;
+  position: relative;
+  background-color: transparent;
+  margin-left: 7px;
+  &__input {
+    width: 100px;
+    height: 100%;
+    padding: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    color: white;
+    transition: all 300ms linear;
+    &:focus {
+      width: 130px;
+      outline: none;
+      margin-bottom: -3px;
+      border-bottom: solid 2px white;
+    }
+  }
+  &__button {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: solid 1px transparent;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    &:active {
+      outline: none;
+    }
+    .la-search {
+      font-size: 18px;
+      transform: rotate(-90deg);
+      color: #fff;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen
+and (min-device-width: 960px){
+  .search-mobile {
+    display: none;
+  }
+}
+
+

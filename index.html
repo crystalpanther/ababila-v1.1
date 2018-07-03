@@ -82,13 +82,14 @@
                 <div class="menu-mobile__button">
                     <div class="menu-mobile__hamburger"></div>
                 </div>
+                <!--МЕНЮ-->
                 <nav class="menu">
                     <div class="menu__item">
                         <a href="" class="menu__link">О компании</a>
                     </div>
                     <div class="menu__item">
                         <a href="" class="menu__link">Адреса магазинов</a>
-                        <div class="menu__addition menu__addition-new">
+                        <div class="menu__addition menu__addition-new ">
                             <div class="square">new
                                 <div class="triangle-down"></div>
                             </div>
@@ -107,23 +108,24 @@
                         </div>
                     </div>
                     <div class="menu__item menu-item-exp">
-                        <a class="menu__link" href="">Помощь <span class="la la-angle-down"></span></a>
-                        <ul class="menu__submenu-active">
-                            <li><a href=""><span class="la la-question-circle"></span>Как оформить заказ</a></li>
-                            <li><a href=""><span class="la la-money"></span>Способы оплаты товара</a></li>
-                            <li><a href=""><span class="la la-cube"></span>Самовывоз и доставка</a></li>
-                            <li><a href=""><span class="la la-reply"></span>Возврат товара</a></li>
-                            <li><a href=""><span class="la la-file-text"></span>Пользовательское соглашение</a></li>
+                        <div class="menu__link menu-item-exp__link" href="">Помощь <span class="la la-angle-up menu-item-exp__icon"></span></div>
+                        <ul class="menu__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href=""><span class="la submenu__icon la-question-circle"></span>Как оформить заказ</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href=""><span class="la submenu__icon la-money"></span>Способы оплаты товара</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href=""><span class="la submenu__icon la-cube"></span>Самовывоз и доставка</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href=""><span class="la submenu__icon la-reply"></span>Возврат товара</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href=""><span class="la submenu__icon la-file-text"></span>Пользовательское соглашение</a></li>
                         </ul>
                     </div>
                 </nav>
+                <!--МОБИЛЬНОЕ МЕНЮ-->
                 <nav class="menu-mobile">
                     <div class="menu-mobile__item">
                         <a href="" class="menu-mobile__link">О компании</a>
                     </div>
                     <div class="menu-mobile__item">
                         <a href="" class="menu-mobile__link">Адреса магазинов</a>
-                        <div class="menu__addition menu__addition-new">
+                        <div class="menu-mobile__addition menu__addition  menu__addition-new">
                             <div class="square">new
                                 <div class="triangle-down"></div>
                             </div>
@@ -135,20 +137,20 @@
                     </div>
                     <div class="menu-mobile__item">
                         <a href="" class="menu-mobile__link">Вакансии</a>
-                        <div class="menu__addition menu__addition-hot">
+                        <div class="menu-mobile__addition menu__addition menu__addition-hot">
                             <div class="square">hot
                                 <div class="triangle-down"></div>
                             </div>
                         </div>
                     </div>
                     <div class="menu-mobile__item menu-mobile-item-exp">
-                        <a class="menu-mobile__link" href="">Помощь <span class="la la-angle-down"></span></a>
-                        <ul class="menu-mobile__submenu-active">
-                            <li><a href=""><span class="la la-question-circle"></span>Как оформить заказ</a></li>
-                            <li><a href=""><span class="la la-money"></span>Способы оплаты товара</a></li>
-                            <li><a href=""><span class="la la-cube"></span>Самовывоз и доставка</a></li>
-                            <li><a href=""><span class="la la-reply"></span>Возврат товара</a></li>
-                            <li><a href=""><span class="la la-file-text"></span>Пользовательское соглашение</a></li>
+                        <div class="menu-mobile__link menu-item-exp__link">Помощь <span class="la la-angle-up menu-mobile-item-exp__icon"></span></div>
+                        <ul class=" menu-mobile__submenu submenu-mobile">
+                            <li class="submenu__item"><a href="" class="submenu__link"><span class="la la-question-circle"></span>Как оформить заказ</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link"><span class="la la-money"></span>Способы оплаты товара</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link"><span class="la la-cube"></span>Самовывоз и доставка</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link"><span class="la la-reply"></span>Возврат товара</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link"><span class="la la-file-text"></span>Пользовательское соглашение</a></li>
                         </ul>
                     </div>
                     <div class="user-settings-mobile__personal-room personal-room">
@@ -157,13 +159,37 @@
                     </div>
                 </nav>
             </div>
+            <div class="search search-mobile">
+                <input type="text"  class="search-mobile__input" placeholder="Поиск товара..." class="search__input">
+                <button class="search-mobile__button">
+                    <span class="la-search la"></span>
+                </button>
+            </div>
+            <a href="" class="counter counter-mobile">
+                <div class="counter-mobile__item-counter">
+                    <div class="counter item__counter-mobile">
+                        <span>10</span>
+                    </div>
+                    <span class="la la-heart-o"></span>
+                </div>
+            </a>
+            <a href="" class="counter counter-mobile">
+                <div class="counter-mobile__item-counter">
+                    <div class="counter item__counter-mobile">
+                        <span>0</span>
+                    </div>
+                    <span class="la la-shopping-cart"></span>
+                </div>
+            </a>
             <div class="navigation__user-settings user-settings">
                 <div class="user-settings__lang lang">
                     <select name="lang" class="select-lang">
-                        <option value="RU">RU</option>
-                        <option value="EN">EN</option>
+                        <option class="select-lang__option" value="RU">RU</option>
+                        <option class="select-lang__option" value="EN">EN</option>
                     </select>
+                    <span class="la la-angle-down lang__icon"></span>
                 </div>
+
                 <div class="user-settings__personal-room personal-room">
                     <span class="la la-user"></span>
                     <a href="" class="user-settings__personal-enter">вход в личный кабинет</a>
@@ -173,16 +199,16 @@
     </div>
     <div class="header__head head">
         <div class="wrapper head__wrapper">
-            <div class="head__logo logo">
+            <a href="index.html" class="head__logo logo">
                 <img src="img/logo.png" alt="ababila">
-            </div>
+            </a>
             <div class="head__search search">
                 <input type="text"  placeholder="Поиск товара..." class="search__input">
                 <button class="search__button">
                     <span class="la-search la"></span>
                 </button>
             </div>
-            <div class="head__counter counter">
+            <a href="" class="head__counter counter">
                 <div class="counter__item-counter">
                     <div class="counter wish-list__counter">
                         <span>10</span>
@@ -190,8 +216,8 @@
                     <span class="la la-heart-o"></span>
                 </div>
                 <span class="counter__title">Список желаний</span>
-            </div>
-            <div class="head__counter counter">
+            </a>
+            <a href="" class="head__counter counter">
                 <div class="counter__item-counter">
                     <div class="counter item__counter">
                         <span>0</span>
@@ -199,7 +225,7 @@
                     <span class="la la-shopping-cart"></span>
                 </div>
                 <span class="counter__title">В корзине пока пусто</span>
-            </div>
+            </a>
         </div>
     </div>
     <div class="header__rainbow-line rainbow-line"></div>
@@ -214,29 +240,33 @@
                 Каталог товаров
             </div>
             <div class="catalog-nav__item">
-                <a href="" class="catalog-nav__link">
+                <div class="catalog-nav__title-sub">
+                    <a href="" class="catalog-nav__link">
                         <span class="catalog-nav__link-icon">
                         <img src="img/icons/submenu/armchair.png" alt="armchair">
                     </span>
-                    <h3 class="catalog-nav__link-title">Гостинная</h3>
-                    <ul class="catalog-nav__submenu catalog-nav__submenu-active">
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
-                    </ul>
-                </a>
+                        <h3 class="catalog-nav__link-title">Гостинная</h3>
+                        <ul class="catalog-nav__submenu">
+                            <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
+                            <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
+                            <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                            <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
+                            <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
+                        </ul>
+                    </a>
+                </div>
             </div>
             <div class="catalog-nav__item">
                 <a href="" class="catalog-nav__link">
+                    <div class="catalog-nav__title-sub">
                         <span class="catalog-nav__link-icon">
-                        <img src="img/icons/submenu/kitchen--1-.png" alt="kitchen--1">
-                    </span>
-                    <h3 class="catalog-nav__link-title">Кухня</h3>
+                            <img src="img/icons/submenu/kitchen--1-.png" alt="kitchen--1">
+                        </span>
+                        <h3 class="catalog-nav__link-title">Кухня</h3>
+                    </div>
                     <ul class="catalog-nav__submenu">
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Столовые приборы</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Полотенца, держалки</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
@@ -245,10 +275,12 @@
             </div>
             <div class="catalog-nav__item">
                 <a href="" class="catalog-nav__link">
+                    <div class="catalog-nav__title-sub">
                         <span class="catalog-nav__link-icon">
                         <img src="img/icons/submenu/bathtub.png" alt="bathtub">
                     </span>
-                    <h3 class="catalog-nav__link-title">Ванная & туалет</h3>
+                        <h3 class="catalog-nav__link-title">Ванная & туалет</h3>
+                    </div>
                     <ul class="catalog-nav__submenu">
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
@@ -260,13 +292,15 @@
             </div>
             <div class="catalog-nav__item">
                 <a href="" class="catalog-nav__link">
+                    <div class="catalog-nav__title-sub">
                         <span class="catalog-nav__link-icon">
                         <img src="img/icons/submenu/bedroom.png" alt="bedroom">
                     </span>
-                    <h3 class="catalog-nav__link-title">Гардероб & спальня</h3>
+                        <h3 class="catalog-nav__link-title">Гардероб & спальня</h3>
+                    </div>
                     <ul class="catalog-nav__submenu">
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
-                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenulinkm">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Органайзеры подвесные</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
@@ -275,10 +309,12 @@
             </div>
             <div class="catalog-nav__item">
                 <a href="" class="catalog-nav__link">
+                    <div class="catalog-nav__title-sub">
                         <span class="catalog-nav__link-icon">
                         <img src="img/icons/submenu/house.png" alt="house">
                     </span>
-                    <h3 class="catalog-nav__link-title">Улица & гараж-балкон</h3>
+                        <h3 class="catalog-nav__link-title">Улица & гараж-балкон</h3>
+                    </div>
                     <ul class="catalog-nav__submenu">
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
@@ -290,10 +326,12 @@
             </div>
             <div class="catalog-nav__item">
                 <a href="" class="catalog-nav__link">
+                    <div class="catalog-nav__title-sub">
                         <span class="catalog-nav__icon">
-                        <img src="img/icons/submenu/teddy-bear.png" alt="teddy-bear">
-                    </span>
-                    <h3 class="catalog-nav__link-title">Детская комната</h3>
+                            <img src="img/icons/submenu/teddy-bear.png" alt="teddy-bear">
+                        </span>
+                        <h3 class="catalog-nav__link-title">Детская комната</h3>
+                    </div>
                     <ul class="catalog-nav__submenu">
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Коврики для гостинной</a></li>
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Вешалки</a></li>
@@ -302,6 +340,115 @@
                         <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link">Ящики, корзины для хранения</a></li>
                     </ul>
                 </a>
+            </div>
+        </div>
+        <!--МОБИЛЬНАЯ ВЕРСИЯ КАТАЛОГА-->
+        <div class="catalog-nav-mobile">
+            <div class="catalog-nav__head">
+                <span class="la la-bars"></span>
+                Каталог товаров
+            </div>
+            <div class="catalog-nav__item">
+                <div class="catalog-nav-mobile__link">
+                    <div class="catalog-nav__title-sub">
+                        <span class="catalog-nav__link-icon catalog-nav-mobile__link-icon">
+                        <img src="img/icons/submenu/armchair.png" alt="armchair">
+                    </span>
+                        <h3 class="catalog-nav__link-title catalog-nav-mobile__link-title">Гостинная</h3>
+                    </div>
+                    <ul class="catalog-nav-mobile__submenu">
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-nav__item">
+                <div class="catalog-nav-mobile__link">
+                    <div class="catalog-nav__title-sub">
+                        <span class="catalog-nav__link-icon catalog-nav-mobile__link-icon">
+                        <img src="img/icons/submenu/kitchen--1-.png" alt="kitchen--1-">
+                    </span>
+                        <h3 class="catalog-nav__link-title catalog-nav-mobile__link-title">Кухня</h3>
+                    </div>
+                    <ul class="catalog-nav-mobile__submenu">
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav-mobile__submenu-item catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-nav__item">
+                <div class="catalog-nav-mobile__link">
+                    <div class="catalog-nav__title-sub">
+                        <span class="catalog-nav__link-icon catalog-nav-mobile__link-icon">
+                        <img src="img/icons/submenu/bathtub.png" alt="bathtub">
+                    </span>
+                        <h3 class="catalog-nav__link-title catalog-nav-mobile__link-title">Ванная & туалет</h3>
+                    </div>
+                    <ul class="catalog-nav-mobile__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-nav__item">
+                <div class="catalog-nav-mobile__link">
+                    <div class="catalog-nav__title-sub">
+                        <span class="catalog-nav__link-icon catalog-nav-mobile__link-icon">
+                        <img src="img/icons/submenu/bedroom.png" alt="bedroom">
+                    </span>
+                        <h3 class="catalog-nav__link-title catalog-nav-mobile__link-title">Гардероб & спальня</h3>
+                    </div>
+                    <ul class="catalog-nav-mobile__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-nav__item">
+                <div class="catalog-nav-mobile__link">
+                    <div class="catalog-nav__title-sub">
+                        <span class="catalog-nav__link-icon catalog-nav-mobile__link-icon">
+                        <img src="img/icons/submenu/house.png" alt="house">
+                    </span>
+                        <h3 class="catalog-nav__link-title catalog-nav-mobile__link-title">Улица & гараж-балкон</h3>
+                    </div>
+                    <ul class="catalog-nav-mobile__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-nav__item">
+                <div class="catalog-nav-mobile__link">
+                    <div class="catalog-nav__title-sub">
+                        <span class="catalog-nav__link-icon catalog-nav-mobile__link-icon">
+                        <img src="img/icons/submenu/teddy-bear.png" alt="teddy">
+                    </span>
+                        <h3 class="catalog-nav__link-title catalog-nav-mobile__link-title">Детская комната</h3>
+                    </div>
+                    <ul class="catalog-nav-mobile__submenu">
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Коврики для гостинной</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Вешалки</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Чехлы, кофры, вакуумные пакеты</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Органайзеры подвесные</a></li>
+                        <li class="catalog-nav__submenu-item"><a href="" class="catalog-nav__submenu-link catalog-nav-mobile__submenu-link">Ящики, корзины для хранения</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!--ГЛАВНЫЙ БАННЕР-->
@@ -2298,6 +2445,8 @@
 <script src="blocks/owl-slider/owl.carousel.min.js"></script>
 <script src="blocks/tabs/tabs.js"></script>
 <script src="blocks/menu/menu.js"></script>
+<script src="blocks/user-settings/user-settings.js"></script>
+<script src="blocks/catalog-nav/catalog-nav.js"></script>
 
 </body>
 </html>
