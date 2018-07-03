@@ -1,0 +1,33 @@
+.head {
+  background-color: white;
+  padding: 28px 15px 17px 15px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    align-items: center;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 960px) {
+  .head {
+    &__wrapper {
+      justify-content: center;
+    }
+    &__search {
+      display: none;
+    }
+    &__counter {
+      display: none;
+    }
+    &__logo {
+      width: 150px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

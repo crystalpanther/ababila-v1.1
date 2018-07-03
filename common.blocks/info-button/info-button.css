@@ -1,0 +1,44 @@
+.info-button {
+  display: flex;
+  align-items: center;
+  width: 269px;
+  height: 103px;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  padding: 0 11px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 27px 0 5px 0;
+}
+.info-button__item-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #f6bc51;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f6bc51 1%, #ffa02f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6bc51', endColorstr='#ffa02f', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.info-button__item-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info-button__item-title {
+  margin-left: 25px;
+  color: #333333;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}

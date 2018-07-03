@@ -1,0 +1,5 @@
+.store-info__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

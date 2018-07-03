@@ -1,0 +1,180 @@
+.catalog-nav {
+  width: 273px;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  &__head {
+    width: 100%;
+    background-color: #ff5e3a;
+    padding: 19px 25px;
+    box-sizing: border-box;
+    /* Style for "каталог то" */
+  }
+  &__item {
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    transition: all 300ms ease-in-out;
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      .catalog-nav__submenu {
+        display: block;
+      }
+    }
+  }
+  &__title-sub {
+    width: 100%;
+    padding: 15px 0 15px 25px;
+    box-sizing: border-box;
+  }
+  &__link {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__link-icon {
+    height: 22px;
+  }
+  &__link-title {
+    display: inline;
+    margin: 0 0 0 25px;
+    color: #5f5f5f;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  &__submenu {
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    display: none;
+    width: 276px;
+    left: 100%;
+    background-color: white;
+    box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 0 2px;
+  }
+  &__submenu-item {
+    list-style-type: none;
+    &:hover {
+      background-color: #5f5f5f;
+      box-sizing: border-box;
+      .catalog-nav__submenu-link {
+        color: white;
+      }
+    }
+  }
+  &__submenu-link {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    color: #424242;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    border-bottom: dotted 1px #e7e7e7;
+  }
+}
+.catalog-nav-head {
+  &__title {
+    display: inline;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "к, аталог" */
+    letter-spacing: 0.48px;
+    color: #fcfcfc;
+    padding: 0;
+    vertical-align: middle;
+  }
+  &__icon {
+    font-size: 25px;
+    margin-right: 25px;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+}
+
+//MOBILE
+.catalog-nav-mobile {
+  display: none;
+  margin: 10px 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  &__link {
+    cursor: pointer;
+  }
+  &__link-title {
+    margin: 0 0 0 15px;
+  }
+  &__link-icon {
+    display: inline;
+    vertical-align: middle;
+  }
+  &__link-title {
+    display: inline-block;
+  }
+  &__submenu {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: all 300ms linear;
+  }
+  &__submenu__item {
+    padding: 15px 25px 15px 60px;
+  }
+  &__submenu-link {
+    border-bottom: none;
+  }
+  &__submenu-active {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .catalog-nav {
+    display: none;
+  }
+  .catalog-nav-mobile {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+@media only screen
+and (min-device-width: 480px)
+and (max-device-width: 960px) {
+  .catalog-nav {
+    display: none;
+  }
+  .catalog-nav-mobile {
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen
+and (min-device-width: 960px)
+and (max-device-width: 1350px) {
+  .catalog-nav-head {
+    &__title {
+      font-size: 13px;
+    }
+    &__icon {
+      margin-right: 15px;
+    }
+  }
+}

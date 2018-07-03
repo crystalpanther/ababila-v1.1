@@ -1,0 +1,18 @@
+.banner {
+  position: relative;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+.banner__button {
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  top: 82%;
+  left: 3.5%;
+  transform: translate(-3.5%, -82%);
+  position: absolute;
+  /* Style for "ПОДРОБНЕЕ" */
+  color: #ffffff;
+}

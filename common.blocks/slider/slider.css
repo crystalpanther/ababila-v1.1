@@ -1,0 +1,72 @@
+.slider {
+  margin-bottom: 78px;
+}
+.slider__item {
+  margin: 20px 0 0 0;
+}
+.slider__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider__panel-new-goods {
+  position: relative;
+  z-index: 110;
+}
+.slider__control {
+  position: relative;
+}
+.slider__control-new-goods {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+.slider .control__prev,
+.slider .control__next {
+  outline: none;
+  /* Style for "Box" */
+  width: 28px;
+  height: 28px;
+  padding: 0px;
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 1px;
+  transition: all 300ms linear;
+}
+.slider .control__prev span,
+.slider .control__next span {
+  font-size: 21px;
+  color: #555555;
+}
+.slider .control__prev:hover,
+.slider .control__next:hover,
+.slider .control__prev:focus,
+.slider .control__next:focus {
+  outline: none;
+  background-color: #555555;
+}
+.slider .control__prev:hover span,
+.slider .control__next:hover span,
+.slider .control__prev:focus span,
+.slider .control__next:focus span {
+  color: white;
+}
+.slider .control__prev {
+  margin-right: 5px;
+}
+.slider .control__item {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+}
+.slider .control__arrow {
+  position: relative;
+}
+.slider .control__arrow .la {
+  font-size: 18px;
+  color: #333;
+  padding: 7px 5px;
+}

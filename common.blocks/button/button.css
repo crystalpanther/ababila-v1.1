@@ -1,0 +1,14 @@
+.button {
+  /* Style for "кнопка" */
+  padding: 4px 5px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #01b017;
+  /* Style for "В корзину" */
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}

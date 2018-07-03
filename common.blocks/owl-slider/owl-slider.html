@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owl slider</title>
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="content__rubric rubric slider">
+        <div class="slider__panel">
+            <h3 class="content__title rubric__title">рубрика каталога</h3>
+            <div class="rubric__control slider__control">
+                <ul class="control__item"></ul>
+            </div>
+        </div>
+        <div class="rubric__tabs tabs">
+            <div class="tabs__container">
+                <div class="tabs__container-include">
+                    <!--ТАБЫ ДЛЯ РУБРИКИ-->
+                    <div class="tabs">
+                        <ul class="tabs__items">
+                            <li class="tabs__item tabs__item-active" data-tab="#t1"><span class="tabs__border"></span><a class="tabs__link">
+                                <div class="tabs__image">
+                                    <img src="../../img/icons/rubric/feeding.png" alt="feeding">
+                                </div>
+                                <h3 class="tabs__title">детское питание</h3></a>
+                            </li>
+                            <li class="tabs__item" data-tab="#t2"><span class="tabs__border"></span><a class="tabs__link">
+                                <div class="tabs__image">
+                                    <img src="../../img/icons/rubric/train.png" alt="train">
+                                </div>
+                                <h3 class="tabs__title">Игрушки
+                                    для детей</h3>
+                            </a></li>
+                            <li class="tabs__item" data-tab="#t3"><span class="tabs__border"></span><a class="tabs__link">
+                                <div class="tabs__image">
+                                    <img src="../../img/icons/rubric/cradle.png" alt="cradle">
+                                </div>
+                                <h3 class="tabs__title">Детская мебель</h3>
+                            </a></li>
+                            <li class="tabs__item" data-tab="#t4"><span class="tabs__border"></span><a class="tabs__link" >
+                                <div class="tabs__image">
+                                    <img src="../../img/icons/rubric/shoe.png" alt="shoe">
+                                </div>
+                                <h3 class="tabs__title">обувь для детей</h3></a></li>
+                            <li class="tabs__item" data-tab="#t5"><span class="tabs__border"></span><a class="tabs__link" >
+                                <div class="tabs__image">
+                                    <img src="../../img/icons/rubric/cream.png" alt="cream">
+                                </div>
+                                <h3 class="tabs__title">Косметика для детей</h3></a></li>
+                            <li class="tabs__item" data-tab="#t6"><span class="tabs__border"></span><a class="tabs__link" >
+                                <div class="tabs__image">
+                                    <img src="../../img/icons/rubric/clean.png" alt="clean">
+                                </div>
+                                <h3 class="tabs__title">средства для купания</h3></a></li>
+                            <li class="tabs__item" data-tab="#t7"><span class="tabs__border"></span><a class="tabs__link" >
+                                <div class="tabs__image">
+                                    <img src="../../img/icons/rubric/napkin.png" alt="napkin">
+                                </div>
+                                <h3 class="tabs__title">Детские салфетки</h3></a></li>
+                        </ul>
+                    </div>
+                    <!--КОНТЕНТ РУБРИК-->
+                    <div class="tabs__content tab">
+                        <div id="t1" class="tab__content tab__content-active">
+                            <div class="slider slider-rubric">
+                                <div class="slides__t1 owl-carousel">
+                                    <div class="product">
+                                        <span class="product__special-char product__special-char-new">Новинки</span>
+                                        <div class="product__image">
+                                            <img src="../../img/gift.png" alt="gift">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Бонбоньерки цвета марсала
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <div class="favorite-heart">
+                                                <input type="checkbox" id="likeG9"/>
+                                                <label for="likeG9">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                        <div class="product__image">
+                                            <img src="../../img/happy birthday.png" alt="happy birthday">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Аксессуар-подвеска
+                                            “С днём рождения”
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <!--<div class="favorite-heart">-->
+                                            <!--<input type="checkbox" id="likkess"/>-->
+                                            <!--<label for="likkess">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                            <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                            <!--</svg>-->
+                                            <!--</label>-->
+                                            <!--</div>-->
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                        <div class="product__image">
+                                            <img src="../../img/confetty.png" alt="confetty">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Конфетти шары
+                                            Колпаки (3 вида)
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <!--<div class="favorite-heart">-->
+                                            <!--<input type="checkbox" id="lllike"/>-->
+                                            <!--<label for="lllike">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                            <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                            <!--</svg>-->
+                                            <!--</label>-->
+                                            <!--</div>-->
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><span class="product__special-char">Новинки</span>
+                                        <div class="product__image">
+                                            <img src="../../img/flapper.png" alt="flapper">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Пневмохлопушка 40см
+                                            “Лепестки роз”
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <!--<div class="favorite-heart">-->
+                                            <!--<input type="checkbox" id="llikes"/>-->
+                                            <!--<label for="llikes">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                            <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                            <!--</svg>-->
+                                            <!--</label>-->
+                                            <!--</div>-->
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product">
+                                        <span class="product__special-char product__special-char-new">Новинки</span>
+                                        <div class="product__image">
+                                            <img src="../../img/gift.png" alt="gift">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Бонбоньерки цвета марсала
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <!--<div class="favorite-heart">-->
+                                            <!--<input type="checkbox" id="likeG1"/>-->
+                                            <!--<label for="likeG1">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                            <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                            <!--</svg>-->
+                                            <!--</label>-->
+                                            <!--</div>-->
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><span class="product__special-char product__special-char-sale">Распродажа</span>
+                                        <div class="product__image">
+                                            <img src="../../img/happy birthday.png" alt="happy birthday">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Аксессуар-подвеска
+                                            “С днём рождения”
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <!--<div class="favorite-heart">-->
+                                            <!--<input type="checkbox" id="likkess"/>-->
+                                            <!--<label for="likkess">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                            <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                            <!--</svg>-->
+                                            <!--</label>-->
+                                            <!--</div>-->
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><span class="product__special-char product__special-char-action">Акция</span>
+                                        <div class="product__image">
+                                            <img src="../../img/confetty.png" alt="confetty">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Конфетти шары
+                                            Колпаки (3 вида)
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <!--<div class="favorite-heart">-->
+                                            <!--<input type="checkbox" id="lllike"/>-->
+                                            <!--<label for="lllike">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                            <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                            <!--</svg>-->
+                                            <!--</label>-->
+                                            <!--</div>-->
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"> <span class="product__special-char">Новинки</span>
+                                        <div class="product__image">
+                                            <img src="../../img/flapper.png" alt="flapper">
+                                        </div>
+                                        <h3 class="product__title">
+                                            Пневмохлопушка 40см
+                                            “Лепестки роз”
+                                        </h3>
+                                        <div class="product__bottom">
+                                            <button class="product__button button">В корзину</button>
+                                            <!--<div class="favorite-heart">-->
+                                            <!--<input type="checkbox" id="llikes"/>-->
+                                            <!--<label for="llikes">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+                                            <!--<path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>-->
+                                            <!--</svg>-->
+                                            <!--</label>-->
+                                            <!--</div>-->
+                                            <div class="product__price">50 грн</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="t2" class="tab__content">
+                        </div>
+                        <div id="t3" class="tab__content">
+
+                        </div>
+                        <div id="t4" class="tab__content">
+
+                        </div>
+                        <div id="t5" class="tab__content">
+
+                        </div>
+                        <div id="t6" class="tab__content">
+
+                        </div>
+                        <div id="t7" class="tab__content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="../../js/owl.carousel.min.js"></script>
+<script src="../tabs/tabs.js"></script>
+<script src="../../js/main.js"></script>
+<script src="owl-slider.js"></script>
+</body>
+</html>

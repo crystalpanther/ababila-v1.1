@@ -1,0 +1,140 @@
+.product {
+  position: relative;
+  width: 208px;
+  height: 355px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  padding: 21px 21px 10px 14px;
+}
+.product__special-char {
+  text-align: center;
+  padding: 7px 8px;
+  box-sizing: border-box;
+  min-width: 65px;
+  border-radius: 2px;
+  /* Style for "Новинка" */
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+}
+.product__special-char-new {
+  background-color: #d50382;
+}
+.product__special-char-sale {
+  background-color: #ff3622;
+}
+.product__special-char-action {
+  background-color: #60aeea;
+}
+.product__image {
+  position: relative;
+  width: 150px;
+  text-align: center;
+  height: 184px;
+}
+.product__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.product__title {
+  text-align: center;
+  color: #737373;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  height: 55px;
+}
+.product__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  box-sizing: border-box;
+  transform: translateY(-100%);
+  padding: 18px 9px 18px 8px;
+}
+.product__price {
+  /* Style for "50 ГРН" */
+  color: #272727;
+  font-family: Roboto;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.product-banner {
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #e7e7e7;
+}
+.product-banner__right {
+  margin-left: 10px;
+}
+.product-banner__special-char {
+  /* Style for "Новинка" */
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  padding: 3px 8px;
+  box-sizing: border-box;
+  min-width: 65px;
+  font-family: Roboto;
+  border-radius: 2px;
+  color: #fff;
+}
+.product-banner__special-char-new {
+  background-color: #d50382;
+}
+.product-banner__special-char-sale {
+  background-color: #ff3622;
+}
+.product-banner__special-char-action {
+  background-color: #60aeea;
+}
+.product-banner__image {
+  position: relative;
+  /* Style for "пикча" */
+  width: 131px;
+  height: 149px;
+}
+.product-banner__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.product-banner__title {
+  margin: 10px 0;
+  color: #737373;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+.product-banner__bottom {
+  display: flex;
+  align-items: center;
+}
+.product-banner__price {
+  /* Style for "50 ГРН" */
+  color: #272727;
+  font-family: Roboto;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.product-banner .description__item {
+  color: #737373;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}

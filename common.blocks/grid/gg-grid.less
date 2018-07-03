@@ -1,0 +1,98 @@
+.grid (@row, @state, @col: 1, @offset: 0) when (@col < (@row + 1)) {
+    .row-@{row} > .col.@{state}-@{col} {
+        width: 100% / @row * @col;
+    }
+    .row-@{row} > .col.offset-@{state}-@{offset} {
+        margin-left: 100% / @row * (@col - 1);
+    }
+    .grid(@row, @state, @col + 1, @offset + 1);
+}
+.visibility(@state) {
+    .visible-inline-@{state} { display: inline-block !important; }
+           .visible-@{state} { display: block !important; }
+            .hidden-@{state} { display: none !important; }
+}
+.float-collapse() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+[data-content-area="900px"]  .wrapper { max-width: 900px; }
+[data-content-area="1000px"] .wrapper { max-width: 1000px; }
+[data-content-area="1100px"] .wrapper { max-width: 1100px; }
+[data-content-area="1200px"] .wrapper { max-width: 1200px; }
+[data-content-area="1300px"] .wrapper { max-width: 1300px; }
+[data-content-area="1400px"] .wrapper { max-width: 1400px; }
+[data-content-area="1500px"] .wrapper { max-width: 1500px; }
+
+[data-fix][data-content-area="1000px"] { min-width: 1000px; }
+[data-fix][data-content-area="1100px"] { min-width: 1100px; }
+[data-fix][data-content-area="1200px"] { min-width: 1200px; }
+[data-fix][data-content-area="1300px"] { min-width: 1300px; }
+[data-fix][data-content-area="1400px"] { min-width: 1400px; }
+[data-fix][data-content-area="1500px"] { min-width: 1500px; }
+
+.wrapper {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    //.float-collapse();
+}
+
+.row-5, .row-12, .row-20, .row-24 {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    .float-collapse();
+
+    &.col-float-right {
+        & > .col {
+            float: right;
+        }
+    }
+    .col {
+        float: left;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Helper classes */
+.float-left  { float: left !important; }
+.float-right { float: right !important; }
+
+@media (min-width: 0px) {
+    .grid(5, xs);
+    .grid(12, xs);
+    .grid(20, xs);
+    .grid(24, xs);
+
+    .visibility(xs);
+}
+@media (min-width: 600px) {
+    .grid(5, sm);
+    .grid(12, sm);
+    .grid(20, sm);
+    .grid(24, sm);
+
+    .visibility(sm);
+}
+@media (min-width: 900px) {
+    .grid(5, md);
+    .grid(12, md);
+    .grid(20, md);
+    .grid(24, md);
+
+    .visibility(md);
+}
+@media (min-width: 1200px) {
+    .grid(5, lg);
+    .grid(12, lg);
+    .grid(20, lg);
+    .grid(24, lg);
+
+    .visibility(lg);
+}

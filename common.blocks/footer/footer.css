@@ -1,0 +1,118 @@
+.footer {
+  background-color: white;
+  border-top: solid 3px #ff5e3a;
+  padding-top: 52px;
+  box-sizing: border-box;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__title {
+  color: #000000;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* Text style for "сервисы" */
+  letter-spacing: 0.42px;
+}
+.footer__lists {
+  padding: 0;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__link {
+  /* Style for "Аккаунт" */
+  color: #3d3d3d;
+  text-decoration: none;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  /* Text style for "Аккаунт" */
+  letter-spacing: 0.42px;
+}
+.footer .call-info {
+  padding-left: 25px;
+}
+.footer .call-info__title {
+  font-family: "Museo Sans Cyrl 500";
+  font-weight: 400;
+  /* Text style for "З, воните" */
+  color: #000000;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.footer .call-info__time {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+.footer .call-info__number {
+  font-size: 24px;
+  /* Text style for "," */
+  font-family: "Museo Sans Cyrl 500";
+  letter-spacing: 0.32px;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+.footer .call-info__colorful {
+  color: #ff5e3a;
+}
+.footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.footer .social-media__link {
+  display: block;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #515151;
+  margin: 18px 2px 0;
+}
+.footer .social-media__link .la {
+  color: white;
+  padding: 4px 3px;
+  font-size: 24px;
+}
+.footer__rights {
+  border-top: solid 1px #c5c5c5;
+  height: 52px;
+  background-color: #fbfbfb;
+}
+.footer .rights {
+  margin-top: 20px;
+}
+.footer .rights__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.footer .rights__rule {
+  color: #787878;
+  font-family: Lato;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  /* Text style for "2018 © Aba" */
+  letter-spacing: 0.5px;
+}
+.footer .rights__created {
+  opacity: 0.8;
+  color: #000000;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 13px;
+  font-weight: bold;
+}
