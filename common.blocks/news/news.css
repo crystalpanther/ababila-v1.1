@@ -41,6 +41,11 @@
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
+  transition: all 300ms linear;
+  text-decoration: none;
+}
+.news__button:hover {
+  color: #1a2c51;
 }
 .news__date {
   color: #000000;

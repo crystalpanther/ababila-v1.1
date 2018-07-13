@@ -3,6 +3,7 @@
   background-color: white;
   border: 1px solid #e7e7e7;
   border-top: none;
+  width: 271px;
   height: 350px;
 }
 .catalog-nav__head {
@@ -24,6 +25,9 @@
 }
 .catalog-nav__item:last-child {
   border-bottom: none;
+}
+.catalog-nav__item:last-child .catalog-nav__link-title {
+  margin: -9px 0 0 13px;
 }
 .catalog-nav__item:hover {
   background-color: #f6f6f6;
@@ -65,13 +69,10 @@
   z-index: 15;
   top: 0;
   margin: 0;
-  left: 255px;
+  left: 271px;
   height: 100%;
   background-color: white;
   box-sizing: border-box;
-}
-.catalog-nav__popular {
-  background-color: #F8EFBA;
 }
 .catalog-nav__submenu {
   padding: 12px 15px;
@@ -239,7 +240,7 @@
   position: relative;
 }
 .catalog-nav-hidden__main-active {
-  height: 290px;
+  height: 291px;
   opacity: 1;
   visibility: visible;
 }
@@ -318,29 +319,15 @@
 .catalog-nav-hidden-mobile {
   display: none;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .catalog-nav {
-    display: none;
-  }
-  .catalog-nav-mobile {
-    width: 100%;
-    display: block;
-  }
+.catalog-nav-hidden-mobile__main {
+  opacity: 0;
+  transition: all 300ms linear;
+  visibility: hidden;
+  height: 0;
+  background-color: white;
 }
-@media only screen and (min-device-width: 480px) and (max-device-width: 960px) {
-  .catalog-nav {
-    display: none;
-  }
-  .catalog-nav-mobile {
-    width: 100%;
-    display: block;
-  }
-}
-@media only screen and (min-device-width: 960px) and (max-device-width: 1350px) {
-  .catalog-nav-head__title {
-    font-size: 13px;
-  }
-  .catalog-nav-head__icon {
-    margin-right: 15px;
-  }
+.catalog-nav-hidden-mobile__main-active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
 }

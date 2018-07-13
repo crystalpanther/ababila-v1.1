@@ -76,16 +76,21 @@
   }
   &__bold {
     color: #333333;
-    font-family: "Museo Sans Cyrl 700s";
+    font-family: "Museo Sans Cyrl 700";
     font-weight: 700;
   }
   &__button {
-    /* Style for "кнопка" */
     width: 253px;
     height: 53px;
     background-color: #ff5e3a;
     padding: 0;
+    transition: all 300ms linear;
+    cursor: pointer;
     background-image: linear-gradient(to right, #ff5e3a 0%, #ff5e3a 100%);
+    &:hover {
+      background-color: darken(#ff5e3a, 25%);
+      background-image: linear-gradient(to right, darken(#ff5e3a, 10%) 0%, darken(#ff5e3a, 15%) 100%);
+    }
   }
 }
 .button-add-to-card {
@@ -95,6 +100,7 @@
   justify-content: space-between;
   outline: none;
   appearance: none;
+  transition: all 300ms linear;
   &__title {
     color: #fefefe;
     font-family: 'Lato Black';
@@ -137,26 +143,5 @@
     text-decoration: line-through;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-  }
-}
-
-/* Extra Small Devices, Phones, Iphone 4, 4S */
-@media only screen
-and (min-device-width: 0px)
-and (max-device-width: 960px){
-  .product-section {
-    margin-top: 27px;
-    background-color: white;
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    &__item {
-      width: 100%;
-    }
-    &__description {
-      margin-left: 0;
-    }
   }
 }

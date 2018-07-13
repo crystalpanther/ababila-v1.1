@@ -18,9 +18,9 @@ var params = {
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: 'public'
+            baseDir: params.out
         },
-        notify: falsegu
+        notify: false
     });
 });
 gulp.task('default', ['server', 'build']);
@@ -84,12 +84,13 @@ gulp.task('scripts', function(){
         .pipe(gulp.dest('js'));
 
     gulp.src([
-        'common.blocks/**/**/*.js',
-        'mobile.blocks/**/**/*.js',
-        'js/main.js',
+        'common.blocks/**/*.js',
+        'js/main.js'
     ])
             .pipe(concat('main.js'))
             .pipe(gulp.dest('public/js'));
+    gulp.src('js/favoriteHeart.js')
+        .pipe(gulp.dest('public/js'));
 
 });
 gulp.task('img', function() {

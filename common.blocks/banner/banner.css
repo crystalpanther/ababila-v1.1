@@ -4,7 +4,7 @@
 }
 .banner img {
   width: 100%;
-  height: 100%;
+  height: 349px;
 }
 .banner__button {
   cursor: pointer;
@@ -16,6 +16,10 @@
   position: absolute;
   color: #ffffff;
   background-color: #3379e4;
+  transition: all 300ms linear;
+}
+.banner__button:hover {
+  background-color: #1855b3;
 }
 .banner__slide {
   position: relative;

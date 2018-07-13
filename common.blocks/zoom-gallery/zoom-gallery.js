@@ -14,13 +14,13 @@ $('.zoom-gallery').slick({
         {
             breakpoint: 480,
             settings: {
-                arrows: true
+                arrows: false,
             }
         },
         {
             breakpoint: 320,
             settings: {
-                arrows: true
+                arrows: false
             }
         }
     ]

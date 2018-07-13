@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <!--ICONS-->
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body class="page">
 <!--HEADER-->
@@ -762,21 +762,23 @@
             </div>
         </div>
         <!--ГЛАВНЫЙ БАННЕР-->
-        <div class="main__banner banner banner__slides">
-            <div class="banner__slide">
-                <img src="img/banner.png" alt="banner">
-                <button class="banner__button button">подробнее</button>
+        <div class="main__banner banner">
+            <div class="banner__slides">
+                <div class="banner__slide">
+                    <img src="img/banner.png" alt="banner">
+                    <button class="banner__button ">подробнее</button>
+                </div>
+                <div class="banner__slide">
+                    <img src="img/banner.png" alt="banner">
+                    <button class="banner__button ">подробнее</button>
+                </div>
+                <div class="banner__slide">
+                    <img src="img/banner.png" alt="banner">
+                    <button class="banner__button ">подробнее</button>
+                </div>
             </div>
-            <div class="banner__slide">
-                <img src="img/banner.png" alt="banner">
-                <button class="banner__button button">подробнее</button>
-            </div>
-            <div class="banner__slide">
-                <img src="img/banner.png" alt="banner">
-                <button class="banner__button button">подробнее</button>
-            </div>
+            <div class="banner__dots"></div>
         </div>
-        <div class="banner__dots"></div>
     </div>
 </div>
 <!--STORE INFO-->
@@ -807,7 +809,7 @@
             </div>
         </a>
         <a href="" class="info-button">
-            <div class="info-button__item-icon">
+            <div class="info-button__item-icon info-button__icon-small">
                 <img src="img/icons/shipped.png" alt="shipped">
             </div>
             <div class="info-button__item-title">
@@ -1219,7 +1221,7 @@
                                         <div class="product-banner__bottom">
                                             <button class="product-banner__button button">В корзину</button>
                                             <div class="favorite__like">
-                                                <i class="la la-heart like__icon"></i>
+                                                <span class="la la-heart like__icon"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -1255,7 +1257,7 @@
                                         <div class="product-banner__bottom">
                                             <button class="product-banner__button button">В корзину</button>
                                             <div class="favorite__like">
-                                                <i class="la la-heart like__icon"></i>
+                                                <span class="la la-heart like__icon"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -1291,7 +1293,7 @@
                                         <div class="product-banner__bottom">
                                             <button class="product-banner__button button">В корзину</button>
                                             <div class="favorite__like">
-                                                <i class="la la-heart like__icon"></i>
+                                                <span class="la la-heart like__icon"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -2545,7 +2547,7 @@
                         Идейные соображения высшего порядка, а также консультация с широким активом в степени обуславливает создание направлений прогрессивного развития.развития.
                     </article>
                     <div class="news__footer">
-                        <div class="news__button">читать далее...</div>
+                        <a href=""  class="news__button">читать далее...</a>
                         <div class="news__date">07.05.2018</div>
                     </div>
                 </div>
@@ -2560,7 +2562,7 @@
                         Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации систем массового участия.
                     </article>
                     <div class="news__footer">
-                        <div class="news__button">читать далее...</div>
+                        <a href=""  class="news__button">читать далее...</a>
                         <div class="news__date">12.05.2018</div>
                     </div>
                 </div>
@@ -2577,7 +2579,7 @@
                         что консультация с широким активом представляет собой интересный эксперимент проверки дальнейших направлений развития.
                     </article>
                     <div class="news__footer">
-                        <div class="news__button">читать далее...</div>
+                        <a href=""  class="news__button">читать далее...</a>
                         <div class="news__date">07.05.2018</div>
                     </div>
                 </div>
@@ -2593,7 +2595,7 @@
 
                     </article>
                     <div class="news__footer">
-                        <div class="news__button">читать далее...</div>
+                        <a href=""  class="news__button">читать далее...</a>
                         <div class="news__date">07.05.2018</div>
                     </div>
                 </div>
@@ -2772,7 +2774,9 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript" src="js/plugins.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/favoriteHeart.js"></script>
 </body>
 </html>

@@ -21,6 +21,9 @@
   border: none !important;
   margin: 10px 3px 0 3px;
 }
+.content__product-of-the-day img {
+  height: 100%;
+}
 .content__product-of-the-day:first-child {
   margin-left: 0;
 }
@@ -33,28 +36,4 @@
 .product-of-the-day__banner {
   width: 418px;
   height: 210px;
-}
-/* Extra Small Devices, Phones, Iphone 4, 4S */
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  .content__goods {
-    width: 100%;
-  }
-}
-/* Extra Small Devices, Phones, Iphone 4, 4S */
-@media only screen and (min-device-width: 400px) and (max-device-width: 834px) {
-  .product-of-the-day__banner {
-    width: 100%;
-    height: 210px;
-  }
-  .product-of-the-day__banner img {
-    height: auto;
-  }
-}
-@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
-  .product-of-the-day__banner {
-    height: auto;
-  }
-  .product-of-the-day__banner img {
-    height: 100%;
-  }
 }

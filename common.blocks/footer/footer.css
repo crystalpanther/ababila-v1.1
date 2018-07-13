@@ -11,7 +11,7 @@
 }
 .footer__title {
   color: #000000;
-  font-family: "Museo Sans Cyrl -500";
+  font-family: "Museo Sans Cyrl 500";
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -24,15 +24,17 @@
   list-style-type: none;
 }
 .footer__link {
-  /* Style for "Аккаунт" */
   color: #3d3d3d;
   text-decoration: none;
-  font-family: "Museo Sans Cyrl -300";
+  font-family: "Museo Sans Cyrl 300";
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  /* Text style for "Аккаунт" */
   letter-spacing: 0.42px;
+  transition: all 30ms linear;
+}
+.footer__link:hover {
+  color: #000000;
 }
 .footer__social-media {
   display: flex;
@@ -182,18 +184,13 @@
   border-radius: 100%;
   background-color: #515151;
   margin: 18px 5px 0;
+  transition: all 300ms linear;
+}
+.social-media__link:hover {
+  background-color: #111111;
 }
 .social-media__link .la {
   color: white;
-  padding: 7px 8px;
+  padding: 8px;
   font-size: 24px;
-}
-/* Extra Small Devices, Phones, Iphone 4, 4S */
-@media only screen and (min-device-width: 0px) and (max-device-width: 960px) {
-  .footer {
-    display: none;
-  }
-  .footer-mobile {
-    display: block;
-  }
 }

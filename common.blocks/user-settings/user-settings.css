@@ -56,6 +56,12 @@
   text-transform: uppercase;
   transition: 200ms linear;
 }
+.user-settings__personal-enter:hover {
+  color: #ffa02f;
+}
+.user-settings__personal-enter:hover:after {
+  border-bottom: dotted 1px #ffa02f;
+}
 .user-settings__personal-enter:after {
   content: '';
   margin-top: -2px;
@@ -81,10 +87,4 @@
   font-weight: 400;
   text-transform: uppercase;
   transition: 200ms linear;
-}
-/* Extra Small Devices, Phones, Iphone 4, 4S */
-@media only screen and (min-device-width: 320px) and (max-device-width: 960px) {
-  .user-settings__personal-room {
-    display: none;
-  }
 }

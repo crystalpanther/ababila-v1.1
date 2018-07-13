@@ -90,19 +90,3 @@
   left: -1px;
   height: 3px;
 }
-/* Extra Small Devices, Phones, Iphone 4, 4S */
-@media only screen and (min-device-width: 0px) and (max-device-width: 861px) {
-  .tabs-rubric__item {
-    height: 4.5em;
-  }
-  .tabs-rubric__item img {
-    height: 17px;
-  }
-  .tabs-rubric__image {
-    height: 18px;
-  }
-  .tabs-rubric__title {
-    font-size: 6px;
-    margin: 5px 0 5px 0;
-  }
-}

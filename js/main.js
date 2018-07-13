@@ -4,22 +4,20 @@
 /**
  * MAIN JS CONTROLLERS
   */
-$(document).ready(function() {
-    rubricGenerationId();
-    tabController();
-    tabPersonalRoom();
+rubricGenerationId();
+tabController();
+tabPersonalRoom();
 
-    sliderTab1.slickSlider();
-    sliderTab2.slickSlider();
-    sliderTab3.slickSlider();
-    sliderTab4.slickSlider();
-    sliderTab5.slickSlider();
-    sliderTab6.slickSlider();
-    sliderTab7.slickSlider();
+sliderTab1.slickSlider();
+sliderTab2.slickSlider();
+sliderTab3.slickSlider();
+sliderTab4.slickSlider();
+sliderTab5.slickSlider();
+sliderTab6.slickSlider();
+sliderTab7.slickSlider();
 
-    sliderGifts.slickSlider();
-    sliderPopular.slickSlider();
+sliderGifts.slickSlider();
+sliderPopular.slickSlider();
 
-    sliderRecommended.slickSlider();
-    sliderPopularMap.slickSlider();
-});
+sliderRecommended.slickSlider();
+sliderPopularMap.slickSlider();

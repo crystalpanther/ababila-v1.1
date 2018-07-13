@@ -1,5 +1,5 @@
 .slider {
-  margin-bottom: 69px;
+  margin-bottom: 73px;
   overflow: hidden;
 }
 .slider__item {
@@ -87,13 +87,4 @@
 }
 .slides__new-goods {
   overflow: hidden;
-}
-/* Extra Small Devices, Phones, Iphone 4, 4S */
-@media only screen and (min-device-width: 0px) and (max-device-width: 834px) {
-  .new-goods__wrapper {
-    flex-wrap: wrap;
-  }
-  .new-goods__item {
-    width: 100%;
-  }
 }

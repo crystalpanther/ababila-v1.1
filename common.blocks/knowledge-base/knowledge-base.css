@@ -36,15 +36,14 @@
   font-weight: 400;
   line-height: 18px;
   text-decoration: none;
+  transition: all 300ms linear;
+}
+.knowledge-base .banner-knowledge__name:hover {
+  color: #565656;
 }
 .knowledge-base .banner-knowledge__name:after {
   content: '';
   margin-top: -1px;
   display: block;
   border-bottom: dotted 1px black;
-}
-@media only screen and (max-device-width: 1024px) {
-  .knowledge-base {
-    display: none;
-  }
 }
