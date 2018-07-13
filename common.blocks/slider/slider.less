@@ -1,9 +1,11 @@
 .slider {
-  margin-bottom: 78px;
+  margin-bottom: 69px;
+  overflow: hidden;
   &__item {
     margin: 20px 0 0 0;
   }
   &__panel {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +15,8 @@
     z-index: 110;
   }
   &__control{
-    position: relative;
+    width: 75px;
+    height: 30px;
   }
   &__control-new-goods {
     position: absolute;
@@ -23,11 +26,11 @@
   .control {
     &__prev,
     &__next {
+      position: relative;
       outline: none;
-      /* Style for "Box" */
       width: 28px;
       height: 28px;
-      padding: 0px;
+      padding: 0;
       border: 1px solid #e4e4e4;
       background-color: #ffffff;
       cursor: pointer;
@@ -40,7 +43,7 @@
       &:hover, &:focus {
         outline: none;
         background-color: #555555;
-        span {
+        .la {
           color: white;
         }
       }
@@ -55,14 +58,47 @@
       list-style-type: none;
       padding: 0;
     }
-    &__arrow{
-      position: relative;
-      .la {
-        font-size: 18px;
-        color: #333;
-        padding: 7px 5px;
-      }
+    &__icon-nav {
+      font-size: 18px;
+      color: #333;
+      padding: 7px 5px;
     }
   }
 }
-
+.tab-slider__control {
+  .control__item {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .control__item-active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.new-goods {
+  &__wrapper {
+    display: flex;
+  }
+  &__item {
+    width: 100%/2;
+  }
+}
+.slides {
+  &__new-goods {
+    overflow: hidden;
+  }
+}
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen
+and (min-device-width: 0px)
+and (max-device-width: 834px){
+  .new-goods {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+}

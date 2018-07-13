@@ -14,10 +14,9 @@
 .menu__link {
   text-decoration: none;
   color: #ededed;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 13px;
   font-weight: 400;
-  /* Text style for "О компании" */
   letter-spacing: 0.39px;
 }
 .menu__icon {
@@ -38,15 +37,13 @@
   position: relative;
   width: 42px;
   height: 22px;
-  /* Style for "New" */
   text-transform: uppercase;
   text-align: center;
   color: #fdfdfd;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 11px;
   font-weight: 700;
   line-height: 26px;
-  /* Text style for "N, ew" */
   letter-spacing: 0.33px;
 }
 .menu__addition .square .triangle-down {
@@ -114,7 +111,7 @@
   text-decoration: none;
   display: block;
   color: #5d5d5d;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 12px;
   font-weight: 300;
   line-height: 26px;
@@ -134,7 +131,7 @@
   z-index: 888;
   background-color: #fff;
   top: 0;
-  left: -40px;
+  left: -28px;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
@@ -149,7 +146,7 @@
   display: block;
   text-decoration: none;
   color: #5d5d5d;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 15px;
   font-weight: 400;
 }
@@ -196,28 +193,29 @@
 .menu-mobile__button {
   display: none;
   margin: auto;
-  width: 25px;
-  height: 14px;
+  width: 30px;
+  height: 22px;
   cursor: pointer;
+  padding: 7px 5px;
 }
 .menu-mobile__hamburger {
   position: relative;
-  transform: translateY(6px);
+  transform: translateY(10px);
   background: #ffffff;
   transition: all 0ms 300ms;
-  width: 25px;
+  width: 30px;
   height: 2px;
 }
 .menu-mobile__hamburger:after,
 .menu-mobile__hamburger:before {
-  width: 25px;
+  width: 30px;
   height: 2px;
 }
 .menu-mobile__hamburger:before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 6px;
+  bottom: 10px;
   background: #ffffff;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -225,7 +223,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 10px;
   background: #ffffff;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }

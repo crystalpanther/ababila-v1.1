@@ -1,11 +1,22 @@
 .product {
   position: relative;
+  display: inline-block;
   width: 208px;
   height: 355px;
   background-color: #fff;
   box-sizing: border-box;
-  border: 1px solid #e7e7e7;
-  padding: 21px 21px 10px 14px;
+  margin: 0 1px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &__wrapper {
+    border: 1px solid #e7e7e7;
+    padding: 16px 14px 10px 14px;
+    box-sizing: border-box;
+  }
   &__special-char {
     text-align: center;
     padding: 7px 8px;
@@ -14,7 +25,7 @@
     border-radius: 2px;
     /* Style for "Новинка" */
     color: #ffffff;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 12px;
     font-weight: 500;
   }
@@ -28,43 +39,55 @@
     background-color: #60aeea;
   }
   &__image {
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     position: relative;
     width: 150px;
     text-align: center;
-    height: 184px;
+    height: 170px;
     img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 100%;
     }
   }
   &__title {
     text-align: center;
     color: #737373;
-    font-family: Lato;
+    font-family: 'Lato Medium';
     font-size: 16px;
     font-weight: 400;
-    height: 55px;
+    padding: 26px 0 15px 0;
+    height: 70px;
+    box-sizing: border-box;
+    margin: 0;
   }
   &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 100%;
     box-sizing: border-box;
-    transform: translateY(-100%);
-    padding: 18px 9px 18px 8px;
+    height: 52px;
   }
   &__price {
     /* Style for "50 ГРН" */
     color: #272727;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
+  }
+}
+.product-no-slider {
+  padding: 0 1px;
+  margin: 0 0 8px 0;
+}
+.product-size-five {
+  padding: 0 10px;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
   }
 }
 .product-banner {
@@ -73,11 +96,20 @@
   box-sizing: border-box;
   padding: 13px;
   border: 1px solid #e7e7e7;
+  &__button-banner {
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    top: 90%;
+    left: 3.5%;
+    transform: translate(-3.5%, -89%);
+    position: absolute;
+    color: #ffffff;
+  }
   &__right {
     margin-left: 10px;
   }
   &__special-char {
-    /* Style for "Новинка" */
     font-size: 12px;
     font-weight: 500;
     line-height: 25px;
@@ -85,7 +117,7 @@
     padding: 3px 8px;
     box-sizing: border-box;
     min-width: 65px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     border-radius: 2px;
     color: #fff;
   }
@@ -100,7 +132,6 @@
   }
   &__image {
     position: relative;
-    /* Style for "пикча" */
     width: 131px;
     height: 149px;
     img {
@@ -114,7 +145,7 @@
   &__title {
     margin: 10px 0;
     color: #737373;
-    font-family: Lato;
+    font-family: 'Lato Medium';
     font-size: 16px;
     font-weight: 400;
   }
@@ -123,23 +154,50 @@
     align-items: center;
   }
   &__price {
-    /* Style for "50 ГРН" */
     color: #272727;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
   }
-  &__description {
-
-  }
   .description {
     &__item {
       color: #737373;
-      font-family: Lato;
+      font-family: 'Lato Medium';
       font-size: 12px;
       font-weight: 400;
       line-height: 14px;
+    }
+  }
+}
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen
+and (min-device-width: 0px)
+and (max-device-width: 1024px){
+  .product__image {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen
+and (min-device-width: 400px)
+and (max-device-width: 834px){
+  .product-banner {
+    height: auto;
+    padding: 30px 15px;
+  }
+  .product-banner__right {
+    margin-left: 50px;
+  }
+}
+@media only screen
+and (min-device-width: 0px)
+and (max-device-width: 400px){
+  .product-banner {
+    height: auto;
+    &__right {
+      margin-left: 10px;
     }
   }
 }

@@ -1,43 +1,75 @@
 .main {
   margin-top: 16px;
+  overflow: hidden;
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-basis: 100%;
   }
   &__banner {
-    width: 850px;
-    margin-left: 20px;
+    width: 100%/12 *10 - 10px;
+    height: 350px;
   }
-  .banner__button {
-    width: 113px;
-    height: 37px;
-    background-color: #3379e4;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 26px;
-    font-family: "Museo Sans Cyrl 500";
-    text-transform: uppercase;
-    /* Text style for "ПОДРОБНЕЕ" */
-    letter-spacing: 0.6px;
+  &__breadcrumbs {
+    position: relative;
+    height: 60px;
+    left: 266px;
   }
 }
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
-  .main__wrapper {
-    justify-content: center;
-    flex-wrap: wrap;
+.banner__button {
+  width: 113px;
+  height: 37px;
+  background-color: #3379e4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Museo Sans Cyrl 500";
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.main-product-map {
+  background-color: #f6f6f6;
+  padding: 20px 0;
+  margin: 0;
+  &__title {
+    color: #404040;
+    font-family: 'Lato Black';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.54px;
+    margin: 0 0 0 24px;
   }
-  .main__banner {
-    width: 100%;
-    margin-left: 0;
-    height: 100%;
+  &__wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.main-personal-room {
+  overflow: visible;
+  padding: 20px 0;
+  margin: 0;
+  &__title {
+    color: #404040;
+    font-family: 'Lato Black';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.54px;
+    margin: 0 0 0 24px;
+  }
+  &__wrapper {
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
-@media only screen
-and (min-device-width: 480px)
-and (max-device-width: 960px) {
+@media only screen and (max-device-width: 480px) {
+  .main__breadcrumbs {
+    height: 115px;
+    left: 0;
+  }
   .main__wrapper {
     justify-content: center;
     flex-wrap: wrap;
@@ -46,5 +78,29 @@ and (max-device-width: 960px) {
     width: 100%;
     margin-left: 0;
     height: 100%;
+  }
+  .main-product-map__title {
+    margin-top: 85px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-device-width: 960px) {
+  .main__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main__banner {
+    width: 100%;
+    margin-left: 0;
+    height: 100%;
+  }
+  .main__breadcrumbs {
+    height: 115px;
+    left: 0;
+  }
+  .main-product-map__title {
+    margin-top: 85px;
+    font-size: 15px;
   }
 }

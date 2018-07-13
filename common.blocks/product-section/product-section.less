@@ -1,0 +1,162 @@
+.page-product-map {
+  background-color: #fff;
+}
+.product-section {
+  margin-top: 27px;
+  background-color: white;
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__item {
+    margin-top: 44px;
+    position: relative;
+    width: 100%/2-1px;
+  }
+  &__gallery {
+    overflow: hidden;
+    padding: 14px 20px;
+    background-color: white;
+  }
+  &__special-char {
+    top: 14px;
+    left: 20px;
+    position: absolute;
+  }
+  &__description {
+    margin-left: 50px;
+  }
+}
+
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+.description {
+  &__title {
+    color: #404040;
+    font-family: 'Lato Black';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  &__price {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  &__text {
+    margin: 24px 0;
+    color: #333333;
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  &__list {
+    padding: 0;
+  }
+  &__item {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    /* Text style for "" */
+    font-family: "Museo Sans Cyrl 300";
+    color: #767676;
+  }
+  &__bold {
+    color: #333333;
+    font-family: "Museo Sans Cyrl 700s";
+    font-weight: 700;
+  }
+  &__button {
+    /* Style for "кнопка" */
+    width: 253px;
+    height: 53px;
+    background-color: #ff5e3a;
+    padding: 0;
+    background-image: linear-gradient(to right, #ff5e3a 0%, #ff5e3a 100%);
+  }
+}
+.button-add-to-card {
+  position: relative;
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  outline: none;
+  appearance: none;
+  &__title {
+    color: #fefefe;
+    font-family: 'Lato Black';
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 0;
+    padding: 16px 22px;
+    box-sizing: border-box;
+  }
+  &__icon {
+    width: 53px;
+    height: 52px;
+    border-left: solid 1px white;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    .la {
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+.price {
+  &__actual {
+    color: #000000;
+    font-family: 'Lato Black';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  &__sale {
+    margin-left: 16px;
+    color: #afafaf;
+    font-family: 'Lato Black';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+}
+
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen
+and (min-device-width: 0px)
+and (max-device-width: 960px){
+  .product-section {
+    margin-top: 27px;
+    background-color: white;
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__description {
+      margin-left: 0;
+    }
+  }
+}

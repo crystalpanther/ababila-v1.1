@@ -1,5 +1,4 @@
 .knowledge-base__title {
-  /* Style for "база знани" */
   text-align: center;
   width: 272px;
   height: 52px;
@@ -22,21 +21,30 @@
   padding: 50px 54px;
   box-sizing: border-box;
   margin-top: 5px;
-  /* Style for "Box копия" */
   width: 272px;
-  height: 351px;
+  height: 357px;
   box-shadow: 0 3px 7px rgba(151, 151, 151, 0.35);
   border: 1px solid #e7e7e7;
   background-color: #fff0e3;
 }
 .knowledge-base .banner-knowledge__name {
+  overflow: hidden;
   color: #161616;
   padding-bottom: 2px;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  text-decoration-color: black;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
+  text-decoration: none;
+}
+.knowledge-base .banner-knowledge__name:after {
+  content: '';
+  margin-top: -1px;
+  display: block;
+  border-bottom: dotted 1px black;
+}
+@media only screen and (max-device-width: 1024px) {
+  .knowledge-base {
+    display: none;
+  }
 }

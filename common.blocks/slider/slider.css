@@ -1,10 +1,12 @@
 .slider {
-  margin-bottom: 78px;
+  margin-bottom: 69px;
+  overflow: hidden;
 }
 .slider__item {
   margin: 20px 0 0 0;
 }
 .slider__panel {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +16,8 @@
   z-index: 110;
 }
 .slider__control {
-  position: relative;
+  width: 75px;
+  height: 30px;
 }
 .slider__control-new-goods {
   position: absolute;
@@ -23,11 +26,11 @@
 }
 .slider .control__prev,
 .slider .control__next {
+  position: relative;
   outline: none;
-  /* Style for "Box" */
   width: 28px;
   height: 28px;
-  padding: 0px;
+  padding: 0;
   border: 1px solid #e4e4e4;
   background-color: #ffffff;
   cursor: pointer;
@@ -46,10 +49,10 @@
   outline: none;
   background-color: #555555;
 }
-.slider .control__prev:hover span,
-.slider .control__next:hover span,
-.slider .control__prev:focus span,
-.slider .control__next:focus span {
+.slider .control__prev:hover .la,
+.slider .control__next:hover .la,
+.slider .control__prev:focus .la,
+.slider .control__next:focus .la {
   color: white;
 }
 .slider .control__prev {
@@ -62,11 +65,35 @@
   list-style-type: none;
   padding: 0;
 }
-.slider .control__arrow {
-  position: relative;
-}
-.slider .control__arrow .la {
+.slider .control__icon-nav {
   font-size: 18px;
   color: #333;
   padding: 7px 5px;
+}
+.tab-slider__control .control__item {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+.tab-slider__control .control__item-active {
+  visibility: visible;
+  opacity: 1;
+}
+.new-goods__wrapper {
+  display: flex;
+}
+.new-goods__item {
+  width: 50%;
+}
+.slides__new-goods {
+  overflow: hidden;
+}
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen and (min-device-width: 0px) and (max-device-width: 834px) {
+  .new-goods__wrapper {
+    flex-wrap: wrap;
+  }
+  .new-goods__item {
+    width: 100%;
+  }
 }

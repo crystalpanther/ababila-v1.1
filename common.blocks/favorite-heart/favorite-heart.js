@@ -1,11 +1,5 @@
-var animated = false;
-$('.heart').click(function(){
-    if(!animated){
-        $(this).addClass('happy').removeClass('broken');
-        animated = true;
-    }
-    else {
-        $(this).removeClass('happy').addClass('broken');
-        animated = false;
-    }
-}); 
+$(function() {
+    $('.like__icon').click(function() {
+        $(this).toggleClass('like-anim__icon');
+    });
+});

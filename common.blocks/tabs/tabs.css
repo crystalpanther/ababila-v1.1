@@ -1,146 +1,108 @@
-.tabs {
-  margin-top: 20px;
+.tabs-rubric {
+  margin: 29px 0 5px 0;
 }
-.tabs__container {
+.tabs-rubric__container {
   position: relative;
 }
-.tabs__container:after {
+.tabs-rubric__container:after {
   content: "";
   display: table;
   clear: both;
 }
-.tabs__container-include .tabs__items {
+.tabs-rubric__content {
+  position: relative;
+  margin-top: 5px;
+}
+.tabs-rubric__items {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0;
   margin: 0;
 }
-.tabs__container-include .tabs__items:after {
+.tabs-rubric__items:after {
   content: "";
   display: table;
   clear: both;
 }
-.tabs__container-include .tabs__item {
+.tabs-rubric__item {
   position: relative;
   text-align: center;
-  width: 117px;
-  height: 108px;
+  width: 7.2em;
+  height: 6.2rem;
   border: 1px solid #e7e7e7;
   background-color: #fcfcfc;
   list-style-type: none;
   margin: 0 1px;
-  padding: 21px 4px 18px 5px;
+  padding: 1em 0.25em 2.3em 0.25em;
   box-sizing: border-box;
 }
-.tabs__container-include .tabs__item:first-child {
+.tabs-rubric__item:first-child {
   margin-left: 0;
 }
-.tabs__container-include .tabs__item:last-child {
+.tabs-rubric__item:last-child {
   margin-right: 0;
 }
-.tabs__container-include .tabs__link {
+.tabs-rubric__link {
   display: block;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
-.tabs__container-include .tabs__image {
+.tabs-rubric__image {
   position: relative;
-  height: 36px;
+  height: 1.79em;
 }
-.tabs__container-include .tabs__image img {
+.tabs-rubric__image img {
   vertical-align: bottom;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -100%);
 }
-.tabs__container-include .tabs__title {
+.tabs-rubric__title {
   color: #272727;
   font-family: "Museo Sans Cyrl 100";
-  font-size: 11px;
-  font-weight: 400;
+  font-size: 0.68em;
   text-transform: uppercase;
+  font-weight: 400;
 }
-.tabs__container-include .tabs__item-active .tabs__border {
-  display: block;
-  background-color: #5e8ce0;
-  background-image: linear-gradient(to right, #f5bd54 0%, #fea131 99%);
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 117px;
-  height: 3px;
-}
-.tabs__content {
-  position: relative;
-  margin-top: 5px;
-}
-.tabs .tab__content {
+.tab-rubric__content {
   position: absolute;
   top: 0;
   left: 0;
   visibility: hidden;
   opacity: 0;
 }
-.tabs .tab__content-active {
+.tab-rubric__content-active {
   position: relative;
   visibility: visible;
   opacity: 1;
 }
-.tabs .dropdown-mobile-container {
-  display: none;
-  margin-top: 50px;
-  width: 300px;
-  height: 100%;
-  border-radius: 8px;
-  margin-bottom: 100px;
-}
-.tabs .dropdown-mobile-container .tab-container {
-  width: 300px;
-}
-.tabs .dropdown-mobile-container .tab-container .tabs-mobile {
-  width: 70px;
-  height: auto;
-  display: table-row;
-  float: left;
-  text-align: center;
-  text-transform: uppercase;
-}
-.tabs .dropdown-mobile-container .tab-container .tabs-mobile > ul {
-  height: 100%;
-}
-.tabs .dropdown-mobile-container .tab-container .tabs-mobile > ul > li {
-  width: 67px;
-  margin-right: 2px;
-}
-.tabs .dropdown-mobile-container .tab-container .tabs-mobile > ul > li > a {
+.tabs-rubric__item-active .tabs-rubric__border {
   display: block;
-  padding: 18px 10px;
-  cursor: pointer;
-  border: solid 3px transparent;
-}
-.tabs .dropdown-mobile-container .tab-container .tabs-mobile > ul > li > a.active {
-  border: 3px solid black;
-  border-right: 3px solid transparent;
-  background-color: black;
-  color: #fff;
-}
-.tabs .dropdown-mobile-container .tab-container .tab-content {
-  display: table-column;
-  width: 200px;
-  height: 100%;
-  float: left;
-}
-.tabs .dropdown-mobile-container .tab-container .tab-content .content {
+  transform: translateX(1px);
+  width: 100%;
+  background-color: #5e8ce0;
+  background-image: linear-gradient(to right, #f5bd54 0%, #fea131 99%);
   position: absolute;
-  top: 0;
-  left: 15px;
-  visibility: hidden;
-  opacity: 0;
+  top: -1px;
+  left: -1px;
+  height: 3px;
 }
-.tabs .dropdown-mobile-container .tab-container .tab-content .content.active {
-  position: relative;
-  visibility: visible;
-  opacity: 1;
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen and (min-device-width: 0px) and (max-device-width: 861px) {
+  .tabs-rubric__item {
+    height: 4.5em;
+  }
+  .tabs-rubric__item img {
+    height: 17px;
+  }
+  .tabs-rubric__image {
+    height: 18px;
+  }
+  .tabs-rubric__title {
+    font-size: 6px;
+    margin: 5px 0 5px 0;
+  }
 }

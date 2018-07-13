@@ -1,0 +1,117 @@
+.stubs {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  &__page {
+    height: 880px;
+    background: url('img/bg.png') repeat;
+    &:after {
+      background: #ff7a3d; /* Old browsers */
+      background: -moz-linear-gradient(left, #ff7a3d 0%, #fea73c 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #ff7a3d 0%,#fea73c 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #ff7a3d 0%,#fea73c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7a3d', endColorstr='#fea73c',GradientType=1 ); /* IE6-9 */
+      position: absolute;
+      width: 100%;
+      top: 0;
+      opacity: 0.7;
+      left: 0;
+      right: 0;
+      height: 880px;
+      content: '';
+      display: block;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 50;
+  }
+  &__logo {
+    padding-top: 73px;
+    margin: 0 auto;
+    width: 430px;
+    text-align: center;
+    img {
+      box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+  &__footer {
+    position: relative;
+    z-index: 52;
+    width: 100%;
+  }
+}
+.address {
+  margin-top: 124px;
+  display: flex;
+  justify-content: center;
+  &__list {
+    margin: 0 30px 30px 30px;
+    padding: 0;
+  }
+  &__item {
+    height: 50px;
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 20px;
+    .fa {
+      color: white;
+      font-size: 20px;
+      margin-top: 7px;
+    }
+  }
+  &__icon-circle {
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    .fa-phone {
+      margin: 0;
+      color: orange;
+      font-size: 15px;
+      vertical-align: top;
+      padding: 4px 0 0 0px;
+    }
+  }
+  &__text {
+    margin: 0 0 0 12px;
+    color: #ffffff;
+    font-family: "Museo Sans Cyrl 500";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px
+  }
+}
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen
+and (min-device-width: 600px)
+and (max-device-width: 960px){
+  .address__text {
+    font-size: 16px;
+  }
+}
+@media only screen
+and (min-device-width: 0px)
+and (max-device-width: 600px){
+  .stubs__logo {
+    width: 250px;
+  }
+  .address {
+    margin-top: 60px;
+    flex-wrap: wrap;
+    &__text {
+      font-size: 14px;
+    }
+    &__list {
+      margin: 0 30px 50px 30px;
+    }
+  }
+}

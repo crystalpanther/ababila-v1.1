@@ -1,5 +1,5 @@
 .news {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   width: 224px;
 }
 .news__image {
@@ -14,18 +14,17 @@
 .news__title {
   margin: 8px 0;
   color: #272727;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
 .news__text {
   color: #878787;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  /* Text style for "Идейные со" */
   letter-spacing: 0.14px;
 }
 .news__footer {
@@ -36,22 +35,19 @@
 }
 .news__button {
   color: #5e8ce0;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 10px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  /* Text style for "читать дал" */
   letter-spacing: 0.3px;
 }
 .news__date {
-  /* Style for "07.05.2018" */
   color: #000000;
-  font-family: Lato;
+  font-family: 'Lato Medium';
   font-size: 10px;
   font-weight: 300;
   line-height: 24px;
   text-transform: uppercase;
-  /* Text style for "07.05.2018" */
   letter-spacing: 0.3px;
 }

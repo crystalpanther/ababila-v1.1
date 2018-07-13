@@ -1,4 +1,5 @@
 .footer {
+  position: static;
   background-color: white;
   border-top: solid 3px #ff5e3a;
   padding-top: 52px;
@@ -10,12 +11,10 @@
 }
 .footer__title {
   color: #000000;
-  font-family: "Museo Sans Cyrl 500";
+  font-family: "Museo Sans Cyrl -500";
   font-size: 14px;
   font-weight: 400;
-  line-height: 26px;
   text-transform: uppercase;
-  /* Text style for "сервисы" */
   letter-spacing: 0.42px;
 }
 .footer__lists {
@@ -28,18 +27,28 @@
   /* Style for "Аккаунт" */
   color: #3d3d3d;
   text-decoration: none;
-  font-family: "Museo Sans Cyrl 300";
+  font-family: "Museo Sans Cyrl -300";
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   /* Text style for "Аккаунт" */
   letter-spacing: 0.42px;
 }
-.footer .call-info {
+.footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.footer__rights {
+  border-top: solid 1px #c5c5c5;
+  height: 52px;
+  background-color: #fbfbfb;
+}
+.call-info {
   padding-left: 25px;
 }
-.footer .call-info__title {
-  font-family: "Museo Sans Cyrl 500";
+.call-info__title {
+  font-family: "Museo Sans Cyrl -500";
   font-weight: 400;
   /* Text style for "З, воните" */
   color: #000000;
@@ -47,29 +56,24 @@
   padding: 0;
   margin: 0;
 }
-.footer .call-info__time {
-  font-family: "Museo Sans Cyrl 100";
+.call-info__time {
+  font-family: "Museo Sans Cyrl";
   font-size: 12px;
   padding: 0;
   margin: 0;
 }
-.footer .call-info__number {
+.call-info__number {
   font-size: 24px;
   /* Text style for "," */
-  font-family: "Museo Sans Cyrl 500";
+  font-family: "Museo Sans Cyrl -500";
   letter-spacing: 0.32px;
   padding: 0;
   margin: 5px 0 0 0;
 }
-.footer .call-info__colorful {
+.call-info__colorful {
   color: #ff5e3a;
 }
-.footer__social-media {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-.footer .social-media__link {
+.social-media__link {
   display: block;
   text-decoration: none;
   width: 30px;
@@ -78,41 +82,118 @@
   background-color: #515151;
   margin: 18px 2px 0;
 }
-.footer .social-media__link .la {
+.social-media__link .la {
   color: white;
   padding: 4px 3px;
   font-size: 24px;
 }
-.footer__rights {
-  border-top: solid 1px #c5c5c5;
-  height: 52px;
-  background-color: #fbfbfb;
+.rights {
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
 }
-.footer .rights {
-  margin-top: 20px;
-}
-.footer .rights__wrapper {
+.rights__wrapper {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
 }
-.footer .rights__rule {
+.rights__rule {
   color: #787878;
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 10px;
   font-weight: 400;
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  /* Text style for "2018 © Aba" */
   letter-spacing: 0.5px;
 }
-.footer .rights__created {
+.rights__created {
   opacity: 0.8;
   color: #000000;
-  font-family: "Museo Sans Cyrl 100";
+  font-family: "Museo Sans Cyrl -700";
   font-size: 13px;
   font-weight: bold;
+}
+.footer-mobile {
+  display: none;
+  background-color: white;
+  border-top: solid 3px #ff5e3a;
+  padding-top: 52px;
+  box-sizing: border-box;
+}
+.footer-mobile__item {
+  width: 100%;
+}
+.footer-mobile__logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer-mobile__title {
+  padding: 15px 20px;
+  border-bottom: dotted 1px #333;
+  cursor: pointer;
+}
+.footer-mobile__title:focus {
+  background-color: #333;
+  color: white;
+}
+.footer-mobile__title-sm {
+  padding: 15px 20px;
+}
+.footer-mobile__lists {
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: all 300ms linear;
+}
+.footer-mobile__lists-active {
+  padding: 0;
+  transform: translateX(50px);
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.footer-mobile__list {
+  list-style-type: none;
+  padding: 10px 0;
+}
+.footer-mobile__link {
+  color: #3d3d3d;
+  text-decoration: none;
+  font-family: "Museo Sans Cyrl -300";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.42px;
+}
+.footer-mobile__social-media {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+}
+.social-media__link {
+  display: block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #515151;
+  margin: 18px 5px 0;
+}
+.social-media__link .la {
+  color: white;
+  padding: 7px 8px;
+  font-size: 24px;
+}
+/* Extra Small Devices, Phones, Iphone 4, 4S */
+@media only screen and (min-device-width: 0px) and (max-device-width: 960px) {
+  .footer {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
 }
